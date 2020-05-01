@@ -1,5 +1,4 @@
 /* Reset */
-
 * {
     margin: 0;
     padding: 0;
@@ -18,72 +17,62 @@ $background: rgb(228, 228, 228);
     font-size: 25px;
     font-family: 'Comfortaa', cursive, 'arial';
     
-    
-    
     #gulsen {
         text-decoration: none;
         color: $firstcolor;
         transition: all 1.5s;
     }
-
     #aktas {
         text-decoration: none;
         color: $secondcolor;
         transition: all 1.5s;
     }
 
-
     &:hover {
 
         #gulsen {
             color: $secondcolor;
         }
-
         #aktas {
             color: $firstcolor;
         }
     }
 }
 
-
 html {
     font-family: 'Comfortaa', cursive, 'arial';
     scroll-behavior: smooth;
-
 }
 
 /* Navbar */
 .container-1 {
     padding: 20px;
-}
 
-
-.nav-container { 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    .nav-item {
-        padding: 5px;
-        border-bottom: 1px solid transparent;
-        transition: border-bottom 1s;
-        &:hover {
-            border-bottom: 1px solid black;
-        }
-
-        a {
-            color:$firstcolor;
-            text-decoration: none;
-            transition: color 1s;
+    .nav-container { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .nav-item {
+            padding: 5px;
+            text-align: center;
+            width: 100px;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 1s;
             &:hover {
-                color: $secondcolor;
+                border-bottom: 1px solid black;
             }
     
+            a {
+                color:$firstcolor;
+                text-decoration: none;
+                transition: color 1s;
+                &:hover {
+                    color: $secondcolor;
+                }
+            }
         }
     }
-
-    
 }
-
 
 .nav-item-acvite {
     a {
@@ -96,24 +85,26 @@ html {
 
 /* Portfolio */
 
-
-/**********************************/
+/**********MIXIN**********/
 @mixin wrapdefault ($align) {
     position: relative;
-    margin: 60px;
-    height: 400px;
-    width: 60%;
+    margin-top: 62px;
+    width: 560px;
+    height: 420px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: transparent;
     transition: color 1s;
+    
+
     &:hover {
         color: $secondcolor;
     }
     .project-text {
         text-decoration: none;
-        font-size: 30px;
+        letter-spacing: -2px;
+        font-size: 22px;
         top:0;
         text-align: $align ;
     }
@@ -121,10 +112,14 @@ html {
 /**********************************/
 
 
-.projects-wrap {
+.projects-wrap-background {
     background: $background;
-    .wrap-1 {
+    .projects-wrap {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0px 20px;
+        padding-bottom: 50px;
         
         .project-wrap-1 {
             @include wrapdefault(left);
@@ -144,12 +139,7 @@ html {
                 background-image: url(../img/401-1.JPG)
             }
         }
-    }
     
-    .wrap-2 {
-        display: flex;
-
-
         .project-wrap-3 {
             @include wrapdefault(left);
             background-image:url(../img/302-2.JPG);
@@ -172,33 +162,32 @@ html {
 }
 
 
+
 /*ABOUT*/
 
 .about-wrap {
     background: $background;
 
+    .about-img  {
+        padding-top: 40px;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .about-text-h1 {
+        margin-top: 70px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .about-text-content {
+        margin-top: 30px;
+        padding: 0 60px;
+        padding-bottom: 50px;
+    }
 }
-
-.about-img  {
-    padding-top: 40px;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.about-text-h1 {
-    margin-top: 70px;
-    text-align: center;
-}
-
-.about-text-content {
-    margin-top: 30px;
-    padding: 0 100px;
-    padding-bottom: 50px;
-}
-
-
 
 
 /*CV*/
@@ -212,55 +201,61 @@ html {
 
 /*FOOTER*/
 
-.footer-icon-wrap{ 
-    margin: 15px;
-    padding-left: 400px;
-    padding-right: 400px;
-    display: flex;
-    justify-content: space-evenly;
-    .footer-icon img {
-        width: 50px;
+.footer {
+    .footer-icon-wrap{ 
+        margin: 15px 0px;
+        display: flex;
+        justify-content: space-around;
+        padding: 0 30%;
+        .footer-icon img {
+            width: 50px;
+        }
+    
+    }
+    
+    
+    .contact-wrap {
+        display: flex;
+    }
+    .contact1,.contact2 {
+        flex: 5;
+    }
+    
+    .contact { 
+        flex: 6;
+        border-top: 1px solid gray;
+        padding-top: 9px;
+        width: 400px;
+        text-align: center;
+    }
+    
+    .parvifolia {
+        margin:10px;
+        font-size: 13px;
+        text-align: center;
     }
 
 }
 
 
-.contact-wrap {
-    display: flex;
-}
-.contact1,.contact2 {
-    flex: 5;
-}
-
-.contact { 
-    flex: 6;
-    border-top: 1px solid gray;
-    padding-top: 9px;
-    width: 400px;
-    text-align: center;
-}
-
-.parvifolia {
-    margin:10px;
-    font-size: 13px;
-    text-align: center;
-}
 
 /* 404 */
 
-.h1-404 {
-    font-size:100px;
-    position: relative;
-    bottom: 100px;
-}
-
-.text-404 {
-    position: relative;
-    bottom: 100px;
-}
-
-.text2-404 {
-    padding-top: 50px;
-    position: relative;
-    bottom: 100px;
+.page404 {
+    .h1-404 {
+        font-size:100px;
+        position: relative;
+        bottom: 100px;
+    }
+    
+    .text-404 {
+        position: relative;
+        bottom: 100px;
+    }
+    
+    .text2-404 {
+        padding-top: 50px;
+        position: relative;
+        bottom: 100px;
+    }
 }

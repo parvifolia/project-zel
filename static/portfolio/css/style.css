@@ -45,7 +45,7 @@ html {
   padding: 20px;
 }
 
-.nav-container {
+.container-1 .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,29 +53,32 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
-.nav-container .nav-item {
+.container-1 .nav-container .nav-item {
   padding: 5px;
+  text-align: center;
+  width: 100px;
   border-bottom: 1px solid transparent;
   -webkit-transition: border-bottom 1s;
   transition: border-bottom 1s;
 }
 
-.nav-container .nav-item:hover {
+.container-1 .nav-container .nav-item:hover {
   border-bottom: 1px solid black;
 }
 
-.nav-container .nav-item a {
+.container-1 .nav-container .nav-item a {
   color: lightgray;
   text-decoration: none;
   -webkit-transition: color 1s;
   transition: color 1s;
 }
 
-.nav-container .nav-item a:hover {
+.container-1 .nav-container .nav-item a:hover {
   color: black;
 }
 
@@ -88,23 +91,30 @@ html {
 }
 
 /* Portfolio */
+/**********MIXIN**********/
 /**********************************/
-/**********************************/
-.projects-wrap {
+.projects-wrap-background {
   background: #e4e4e4;
 }
 
-.projects-wrap .wrap-1 {
+.projects-wrap-background .projects-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0px 20px;
+  padding-bottom: 50px;
 }
 
-.projects-wrap .wrap-1 .project-wrap-1 {
+.projects-wrap-background .projects-wrap .project-wrap-1 {
   position: relative;
-  margin: 60px;
-  height: 400px;
-  width: 60%;
+  margin-top: 62px;
+  width: 560px;
+  height: 420px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -116,26 +126,27 @@ html {
   transition: all 1s;
 }
 
-.projects-wrap .wrap-1 .project-wrap-1:hover {
+.projects-wrap-background .projects-wrap .project-wrap-1:hover {
   color: black;
 }
 
-.projects-wrap .wrap-1 .project-wrap-1 .project-text {
+.projects-wrap-background .projects-wrap .project-wrap-1 .project-text {
   text-decoration: none;
-  font-size: 30px;
+  letter-spacing: -2px;
+  font-size: 22px;
   top: 0;
   text-align: left;
 }
 
-.projects-wrap .wrap-1 .project-wrap-1:hover {
+.projects-wrap-background .projects-wrap .project-wrap-1:hover {
   background-image: url(../img/402-1.jpg);
 }
 
-.projects-wrap .wrap-1 .project-wrap-2 {
+.projects-wrap-background .projects-wrap .project-wrap-2 {
   position: relative;
-  margin: 60px;
-  height: 400px;
-  width: 60%;
+  margin-top: 62px;
+  width: 560px;
+  height: 420px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -148,32 +159,27 @@ html {
   transition: all 1s;
 }
 
-.projects-wrap .wrap-1 .project-wrap-2:hover {
+.projects-wrap-background .projects-wrap .project-wrap-2:hover {
   color: black;
 }
 
-.projects-wrap .wrap-1 .project-wrap-2 .project-text {
+.projects-wrap-background .projects-wrap .project-wrap-2 .project-text {
   text-decoration: none;
-  font-size: 30px;
+  letter-spacing: -2px;
+  font-size: 22px;
   top: 0;
   text-align: right;
 }
 
-.projects-wrap .wrap-1 .project-wrap-2:hover {
+.projects-wrap-background .projects-wrap .project-wrap-2:hover {
   background-image: url(../img/401-1.JPG);
 }
 
-.projects-wrap .wrap-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.projects-wrap .wrap-2 .project-wrap-3 {
+.projects-wrap-background .projects-wrap .project-wrap-3 {
   position: relative;
-  margin: 60px;
-  height: 400px;
-  width: 60%;
+  margin-top: 62px;
+  width: 560px;
+  height: 420px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -185,26 +191,27 @@ html {
   transition: all 1s;
 }
 
-.projects-wrap .wrap-2 .project-wrap-3:hover {
+.projects-wrap-background .projects-wrap .project-wrap-3:hover {
   color: black;
 }
 
-.projects-wrap .wrap-2 .project-wrap-3 .project-text {
+.projects-wrap-background .projects-wrap .project-wrap-3 .project-text {
   text-decoration: none;
-  font-size: 30px;
+  letter-spacing: -2px;
+  font-size: 22px;
   top: 0;
   text-align: left;
 }
 
-.projects-wrap .wrap-2 .project-wrap-3:hover {
+.projects-wrap-background .projects-wrap .project-wrap-3:hover {
   background-image: url(../img/302-1.JPG);
 }
 
-.projects-wrap .wrap-2 .project-wrap-4 {
+.projects-wrap-background .projects-wrap .project-wrap-4 {
   position: relative;
-  margin: 60px;
-  height: 400px;
-  width: 60%;
+  margin-top: 62px;
+  width: 560px;
+  height: 420px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -216,18 +223,19 @@ html {
   transition: all 1s;
 }
 
-.projects-wrap .wrap-2 .project-wrap-4:hover {
+.projects-wrap-background .projects-wrap .project-wrap-4:hover {
   color: black;
 }
 
-.projects-wrap .wrap-2 .project-wrap-4 .project-text {
+.projects-wrap-background .projects-wrap .project-wrap-4 .project-text {
   text-decoration: none;
-  font-size: 30px;
+  letter-spacing: -2px;
+  font-size: 22px;
   top: 0;
   text-align: right;
 }
 
-.projects-wrap .wrap-2 .project-wrap-4:hover {
+.projects-wrap-background .projects-wrap .project-wrap-4:hover {
   background-image: url(../img/301-1.JPG);
 }
 
@@ -236,7 +244,7 @@ html {
   background: #e4e4e4;
 }
 
-.about-img {
+.about-wrap .about-img {
   padding-top: 40px;
   height: 400px;
   background-size: cover;
@@ -244,14 +252,15 @@ html {
   background-repeat: no-repeat;
 }
 
-.about-text-h1 {
+.about-wrap .about-text-h1 {
   margin-top: 70px;
   text-align: center;
+  font-size: 30px;
 }
 
-.about-text-content {
+.about-wrap .about-text-content {
   margin-top: 30px;
-  padding: 0 100px;
+  padding: 0 60px;
   padding-bottom: 50px;
 }
 
@@ -264,35 +273,33 @@ html {
 }
 
 /*FOOTER*/
-.footer-icon-wrap {
-  margin: 15px;
-  padding-left: 400px;
-  padding-right: 400px;
+.footer .footer-icon-wrap {
+  margin: 15px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 30%;
 }
 
-.footer-icon-wrap .footer-icon img {
+.footer .footer-icon-wrap .footer-icon img {
   width: 50px;
 }
 
-.contact-wrap {
+.footer .contact-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.contact1, .contact2 {
+.footer .contact1, .footer .contact2 {
   -webkit-box-flex: 5;
       -ms-flex: 5;
           flex: 5;
 }
 
-.contact {
+.footer .contact {
   -webkit-box-flex: 6;
       -ms-flex: 6;
           flex: 6;
@@ -302,25 +309,25 @@ html {
   text-align: center;
 }
 
-.parvifolia {
+.footer .parvifolia {
   margin: 10px;
   font-size: 13px;
   text-align: center;
 }
 
 /* 404 */
-.h1-404 {
+.page404 .h1-404 {
   font-size: 100px;
   position: relative;
   bottom: 100px;
 }
 
-.text-404 {
+.page404 .text-404 {
   position: relative;
   bottom: 100px;
 }
 
-.text2-404 {
+.page404 .text2-404 {
   padding-top: 50px;
   position: relative;
   bottom: 100px;
