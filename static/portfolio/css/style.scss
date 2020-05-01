@@ -1,3 +1,201 @@
-h1 {
-    color: paleturquoise;;
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variables */
+$firstcolor : lightgray;
+$secondcolor: black;
+
+
+/* LOGO */
+.logo {
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive, 'arial';
+    
+    
+    
+    #gulsen {
+        text-decoration: none;
+        color: $firstcolor;
+        transition: all 1.5s;
+    }
+
+    #aktas {
+        text-decoration: none;
+        color: $secondcolor;
+        transition: all 1.5s;
+    }
+
+
+    &:hover {
+
+        #gulsen {
+            color: $secondcolor;
+        }
+
+        #aktas {
+            color: $firstcolor;
+        }
+    }
+}
+
+
+html {
+    font-family: 'Comfortaa', cursive, 'arial';
+    scroll-behavior: smooth;
+
+}
+
+/* Navbar */
+.container-1 {
+    padding: 20px;
+}
+
+
+.nav-container { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .nav-item {
+        padding: 5px;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom 1s;
+        &:hover {
+            border-bottom: 1px solid black;
+        }
+
+        a {
+            color:$firstcolor;
+            text-decoration: none;
+            transition: color 1s;
+            &:hover {
+                color: $secondcolor;
+            }
+    
+        }
+    }
+
+    
+}
+
+
+.nav-item-acvite {
+    a {
+        color: $secondcolor!important;
+    }
+    
+    border-bottom: 1px solid black!important
+}
+
+
+/* Portfolio */
+
+
+/**********************************/
+@mixin wrapdefault ($align) {
+    position: relative;
+    margin: 60px;
+    height: 400px;
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: transparent;
+    transition: color 1s;
+    &:hover {
+        color: $secondcolor;
+    }
+    .project-text {
+        text-decoration: none;
+        font-size: 30px;
+        top:0;
+        text-align: $align ;
+    }
+}
+/**********************************/
+
+
+.projects-wrap {
+    background: rgb(228, 228, 228);
+    .wrap-1 {
+        display: flex;
+        
+        .project-wrap-1 {
+            @include wrapdefault(left);
+            background-image:url(../img/402-2.JPG);
+            transition: all 1s;
+            &:hover {
+                background-image: url(../img/402-1.jpg);
+            }
+        }
+
+        .project-wrap-2 {
+            @include wrapdefault(right);
+            text-align: right!important;
+            background-image:url(../img/401-2.JPG);
+            transition: all 1s;
+            &:hover {
+                background-image: url(../img/401-1.JPG)
+            }
+        }
+    }
+    
+    .wrap-2 {
+        display: flex;
+
+
+        .project-wrap-3 {
+            @include wrapdefault(left);
+            background-image:url(../img/302-2.JPG);
+            transition: all 1s;
+            &:hover {
+                background-image:url(../img/302-1.JPG);
+            }
+        }
+
+        .project-wrap-4 {
+            @include wrapdefault(right);
+            background-image:url(../img/301-2.JPG);
+            transition: all 1s;
+            &:hover {
+                background-image:url(../img/301-1.JPG);
+            }
+        }
+    }
+
+}
+
+/*FOOTER*/
+
+.footer-icon-wrap{ 
+    margin: 15px;
+    padding-left: 400px;
+    padding-right: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    .footer-icon img {
+        width: 50px;
+    }
+
+}
+
+
+.contact { 
+    border-top: 1px solid gray;
+    padding-top: 9px;
+    width: 400px;
+    position: relative;
+    left: 460px;
+    text-align: center;
+}
+
+.parvifolia {
+    margin:10px;
+    font-size: 13px;
+    text-align: center;
 }
