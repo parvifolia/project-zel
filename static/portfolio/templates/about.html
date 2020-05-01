@@ -1,0 +1,98 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
+        <link rel="stylesheet" href="{%static 'portfolio/css/style.css'%}">
+        <title>About | Gülşen Aktaş</title>
+
+        
+    </head>
+
+    <header class='container-1'>
+
+        <div class="logo">
+            <a id='gulsen' href='#'>GÜLŞEN</a>
+            <a id='aktas' href="#">AKTAŞ</a>
+        </div>
+
+        <div class="nav-container">
+            <div class="nav-item nav-item-acvite">
+                <a href="#">ABOUT</a>
+            </div>
+
+
+            <div class="nav-item ">
+                <a href="{% url 'home'%}">PORTFOLIO</a>
+            </div>
+
+            <div class="nav-item">
+                <a href="{% url 'cv'%}">CV</a>
+            </div>
+        </div>
+    </header>
+
+    <body>
+
+        <div class="about-wrap">
+            <div class="about-img" style='background-image: url({% static 'portfolio/img/about.jpg'%});'>
+            </div>
+
+            <div class="about-text-h1">
+                <h1>GÜLŞEN AKTAŞ</h1>
+            </div>
+
+            <div class="about-text-content">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis maxime assumenda et adipisci, sequi repellendus, impedit accusantium corporis amet, vitae voluptate atque laborum deleniti! A quaerat sit, eaque ad itaque minima cumque recusandae molestiae reiciendis veniam sapiente tenetur vero, voluptas porro! Rem quibusdam, porro reiciendis, ipsa officia asperiores beatae voluptatum optio vitae pariatur ut ratione consequatur. Velit qui deleniti quas molestiae reprehenderit commodi laborum dicta soluta pariatur debitis impedit possimus culpa exercitationem, tempora esse aliquid id sit, neque itaque. Consequuntur id ipsam aspernatur iure repellat, harum aliquid omnis esse ipsa! Exercitationem ad temporibus vero rem quidem nihil earum quo.
+            </div>
+        </div>
+                
+
+        <div class="footer">
+            <div class="footer-wrap">
+                <div class="footer-icon-wrap">
+                    <div class="footer-icon">
+                        <a href="mailto:glsnakts.95@gmail.com">
+                            <img src="{% static 'portfolio/img/icon/mail.png' %}">                             
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="#">
+                            <img src="{% static 'portfolio/img/icon/in.png' %}">
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/glsnnakts">
+                            <img src="{% static 'portfolio/img/icon/f.png' %}">
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="https://www.instagram.com/glsnnakts">
+                            <img src="{% static 'portfolio/img/icon/ins.png' %}">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-wrap">
+                    <div class="contact1"></div>
+                    <div class="contact">
+                        CONTACT
+                    </div>
+                    <div class="contact2"> </div>
+                </div>
+
+                <div class="parvifolia">
+                    designed by parvifolia | 2020 copyright
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+
+    </body>
+
+</html>

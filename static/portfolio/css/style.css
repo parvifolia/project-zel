@@ -231,6 +231,38 @@ html {
   background-image: url(../img/301-1.JPG);
 }
 
+/*ABOUT*/
+.about-wrap {
+  background: #e4e4e4;
+}
+
+.about-img {
+  padding-top: 40px;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-text-h1 {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.about-text-content {
+  margin-top: 30px;
+  padding: 0 100px;
+  padding-bottom: 50px;
+}
+
+/*CV*/
+.cv {
+  padding-top: 150px;
+  text-align: center;
+  height: 210px;
+  background: #e4e4e4;
+}
+
 /*FOOTER*/
 .footer-icon-wrap {
   margin: 15px;
@@ -248,12 +280,25 @@ html {
   width: 50px;
 }
 
+.contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact1, .contact2 {
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+}
+
 .contact {
+  -webkit-box-flex: 6;
+      -ms-flex: 6;
+          flex: 6;
   border-top: 1px solid gray;
   padding-top: 9px;
   width: 400px;
-  position: relative;
-  left: 460px;
   text-align: center;
 }
 
@@ -261,5 +306,23 @@ html {
   margin: 10px;
   font-size: 13px;
   text-align: center;
+}
+
+/* 404 */
+.h1-404 {
+  font-size: 100px;
+  position: relative;
+  bottom: 100px;
+}
+
+.text-404 {
+  position: relative;
+  bottom: 100px;
+}
+
+.text2-404 {
+  padding-top: 50px;
+  position: relative;
+  bottom: 100px;
 }
 /*# sourceMappingURL=style.css.map */

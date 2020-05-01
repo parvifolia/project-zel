@@ -1,0 +1,82 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
+        <link rel="stylesheet" href="{%static 'portfolio/css/style.css'%}">
+        <title>Portfolio | Gülşen Aktaş</title>
+
+        
+    </head>
+
+    <header class='container-1'>
+
+        <div class="logo">
+            <a id='gulsen' href='#'>GÜLŞEN</a>
+            <a id='aktas' href="#">AKTAŞ</a>
+        </div>
+
+        <div class="nav-container">
+            <div class="nav-item">
+                <a href=" {% url 'about'%} ">ABOUT</a>
+            </div>
+
+
+            <div class="nav-item">
+                <a href="{% url 'home'%}">PORTFOLIO</a>
+            </div>
+
+            <div class="nav-item nav-item-acvite">
+                <a href="#">CV</a>
+            </div>
+        </div>
+    </header>
+
+    <body>
+
+        <div class="cv">
+            CV WILL BE HERE SOON!
+        </div>
+
+        <div class="footer">
+            <div class="footer-wrap">
+                <div class="footer-icon-wrap">
+                    <div class="footer-icon">
+                        <a href="mailto:glsnakts.95@gmail.com">
+                            <img src="{% static 'portfolio/img/icon/mail.png' %}">                             
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="#">
+                            <img src="{% static 'portfolio/img/icon/in.png' %}">
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/glsnnakts">
+                            <img src="{% static 'portfolio/img/icon/f.png' %}">
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="https://www.instagram.com/glsnnakts">
+                            <img src="{% static 'portfolio/img/icon/ins.png' %}">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-wrap">
+                    <div class="contact1"></div>
+                    <div class="contact">
+                        CONTACT
+                    </div>
+                    <div class="contact2"> </div>
+                </div>
+
+                <div class="parvifolia">
+                    designed by parvifolia | 2020 copyright
+                </div>
+            </div>
+        </div>
+    </body>
