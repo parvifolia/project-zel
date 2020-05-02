@@ -44,7 +44,8 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Navbar */
+/* NAVBAR */
+
 .container-1 {
     padding: 20px;
 
@@ -73,7 +74,6 @@ html {
         }
     }
 }
-
 .nav-item-acvite {
     a {
         color: $secondcolor!important;
@@ -82,10 +82,8 @@ html {
     border-bottom: 1px solid black!important
 }
 
+/* PORTFOLIO */
 
-/* Portfolio */
-
-/**********MIXIN**********/
 @mixin wrapdefault ($align) {
     position: relative;
     margin-top: 62px;
@@ -94,24 +92,28 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: transparent;
-    transition: color 1s;
-    
 
-    &:hover {
-        color: $secondcolor;
+    
+    .project-link {
+        height: 420px;
     }
-    .project-text {
+
+    a{
         text-decoration: none;
+        color: transparent;
+        transition: color 1s;
+        &:hover {
+            color: $secondcolor;
+        }
+    }
+
+    .project-text {
         letter-spacing: -2px;
         font-size: 22px;
         top:0;
         text-align: $align ;
     }
 }
-/**********************************/
-
-
 .projects-wrap-background {
     background: $background;
     .projects-wrap {
@@ -121,6 +123,7 @@ html {
         margin: 0px 20px;
         padding-bottom: 50px;
         
+        
         .project-wrap-1 {
             @include wrapdefault(left);
             background-image:url(../img/402-2.JPG);
@@ -128,11 +131,12 @@ html {
             &:hover {
                 background-image: url(../img/402-1.jpg);
             }
+
+
         }
 
         .project-wrap-2 {
             @include wrapdefault(right);
-            text-align: right!important;
             background-image:url(../img/401-2.JPG);
             transition: all 1s;
             &:hover {
@@ -160,8 +164,6 @@ html {
     }
 
 }
-
-
 
 /*ABOUT*/
 
@@ -237,7 +239,70 @@ html {
 
 }
 
+/*PROJECTS*/
 
+@mixin project-item-default ($direction) {
+    position: relative;
+    margin-top: 62px;
+    width: 560px;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    p {
+        padding-top: 100px;
+        font-size: 17px;
+        text-align: $direction;
+    }
+}
+.project-item-background {
+    background: $background;
+
+    .project-item-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0px 20px;
+        padding-bottom: 50px;
+    
+            .project-item-1 {
+                @include project-item-default(right)
+                background-image: url(../img/402-1.jpg);
+            }
+            .project-item-2 {
+                @include project-item-default(right)
+            }
+            .project-item-3 {
+                @include project-item-default(left)
+            }
+            .project-item-4 {
+                @include project-item-default(left)
+                background-image: url(../img/402-3.jpg);
+            }
+            .project-item-5 {
+                @include project-item-default(right)
+                background-image: url(../img/402-4.jpg);
+            }
+            .project-item-6 {
+                @include project-item-default(right)
+    
+        }
+    }
+}
+
+.item-text {
+    letter-spacing: -2px;
+    font-size: 22px;
+    animation-name: textmove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+    
+@keyframes textmove {
+    0%{ transform: translateX(0px); }
+    100%{ transform: translateX(950px); }
+}
 
 /* 404 */
 

@@ -23,6 +23,8 @@ urlpatterns = [
     path('', views.portfolio_view, name="home"),
     path ('about/', views.about_view, name="about"),
     path ('cv/', views.cv_view, name= "cv"),
+    path ('m402/', views.m402, name= "m402"),
+
 ]
 
 handler404 = 'portfolio.views.page404'
