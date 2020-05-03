@@ -10,21 +10,21 @@
   padding: 10px;
   text-align: center;
   font-size: 25px;
-  font-family: 'Comfortaa', cursive, 'arial';
+  font-family: 'Comfortaa', 'arial';
 }
 
 .logo #gulsen {
   text-decoration: none;
   color: lightgray;
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: color 1.5s;
+  transition: color 1.5s;
 }
 
 .logo #aktas {
   text-decoration: none;
   color: black;
-  -webkit-transition: all 1.5s;
-  transition: all 1.5s;
+  -webkit-transition: color 1.5s;
+  transition: color 1.5s;
 }
 
 .logo:hover #gulsen {
@@ -336,44 +336,6 @@ html {
 }
 
 /*PROJECTS*/
-.item-text {
-  width: 220px;
-  letter-spacing: -2px;
-  font-size: 22px;
-  position: absolute;
-  z-index: 1;
-  top: 178px;
-  left: 70px;
-  -webkit-animation-name: textmove;
-          animation-name: textmove;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes textmove {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(950px);
-            transform: translateX(950px);
-  }
-}
-
-@keyframes textmove {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-  100% {
-    -webkit-transform: translateX(950px);
-            transform: translateX(950px);
-  }
-}
-
 .project-item-background {
   background: #e4e4e4;
 }
@@ -628,44 +590,125 @@ html {
 }
 
 /* SLIDE ANIMATION*/
-#slide1:checked ~ #slides .inner {
+.project-item #slide1:checked ~ #slides .inner {
   margin-left: 0;
 }
 
-#slide2:checked ~ #slides .inner {
+.project-item #slide2:checked ~ #slides .inner {
   margin-left: -100%;
 }
 
-#slide3:checked ~ #slides .inner {
+.project-item #slide3:checked ~ #slides .inner {
   margin-left: -200%;
 }
 
-#slide4:checked ~ #slides .inner {
+.project-item #slide4:checked ~ #slides .inner {
   margin-left: -300%;
 }
 
-#slide1:checked ~ #controls label:nth-child(2),
-#slide2:checked ~ #controls label:nth-child(3),
-#slide3:checked ~ #controls label:nth-child(4),
-#slide4:checked ~ #controls label:nth-child(1) {
+.project-item #slide1:checked ~ #controls label:nth-child(2),
+.project-item #slide2:checked ~ #controls label:nth-child(3),
+.project-item #slide3:checked ~ #controls label:nth-child(4),
+.project-item #slide4:checked ~ #controls label:nth-child(1) {
   background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
   float: right;
   display: block;
 }
 
-#slide1:checked ~ #controls label:nth-last-child(1),
-#slide2:checked ~ #controls label:nth-last-child(4),
-#slide3:checked ~ #controls label:nth-last-child(3),
-#slide4:checked ~ #controls label:nth-last-child(2) {
+.project-item #slide1:checked ~ #controls label:nth-last-child(1),
+.project-item #slide2:checked ~ #controls label:nth-last-child(4),
+.project-item #slide3:checked ~ #controls label:nth-last-child(3),
+.project-item #slide4:checked ~ #controls label:nth-last-child(2) {
   background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
   float: left;
   display: block;
 }
 
-#slide1:checked ~ #bullets label:nth-child(1),
-#slide2:checked ~ #bullets label:nth-child(2),
-#slide3:checked ~ #bullets label:nth-child(3),
-#slide4:checked ~ #bullets label:nth-child(4) {
+.project-item #slide1:checked ~ #bullets label:nth-child(1),
+.project-item #slide2:checked ~ #bullets label:nth-child(2),
+.project-item #slide3:checked ~ #bullets label:nth-child(3),
+.project-item #slide4:checked ~ #bullets label:nth-child(4) {
   background: #444;
+}
+
+/* WIDESCREEN */
+@media screen and (max-width: 3000px) {
+  .item-text {
+    width: 220px;
+    letter-spacing: -2px;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+    top: 178px;
+    left: 70px;
+    -webkit-animation-name: textmove;
+            animation-name: textmove;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes textmove {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(950px);
+              transform: translateX(950px);
+    }
+  }
+  @keyframes textmove {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(950px);
+              transform: translateX(950px);
+    }
+  }
+}
+
+/* SMALLSCREEN */
+@media screen and (max-width: 1024px) {
+  .project-item-text {
+    text-align: left !important;
+  }
+  .item-text {
+    width: 220px;
+    letter-spacing: -2px;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+    top: 179px;
+    left: 20px;
+    -webkit-animation-name: textmove2;
+            animation-name: textmove2;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+  }
+  @-webkit-keyframes textmove2 {
+    0% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(2130%);
+              transform: translateY(2130%);
+    }
+  }
+  @keyframes textmove2 {
+    0% {
+      -webkit-transform: translateY(0%);
+              transform: translateY(0%);
+    }
+    100% {
+      -webkit-transform: translateY(2130%);
+              transform: translateY(2130%);
+    }
+  }
 }
 /*# sourceMappingURL=style.css.map */
