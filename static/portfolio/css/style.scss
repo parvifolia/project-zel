@@ -8,6 +8,9 @@
 $firstcolor : lightgray;
 $secondcolor: black;
 $background: rgb(228, 228, 228);
+$margin-top: 62px;
+$width: 560px;
+$height: 420px;
 
 
 /* LOGO */
@@ -40,8 +43,7 @@ $background: rgb(228, 228, 228);
 }
 
 html {
-    font-family: 'Comfortaa', cursive, 'arial';
-    scroll-behavior: smooth;
+    font-family: 'Comfortaa','arial';
 }
 
 /* NAVBAR */
@@ -86,16 +88,16 @@ html {
 
 @mixin wrapdefault ($align) {
     position: relative;
-    margin-top: 62px;
-    width: 560px;
-    height: 420px;
+    margin-top: $margin-top;
+    width: $width;
+    height: $height;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     
     .project-link {
-        height: 420px;
+        height: $height;
     }
 
     a{
@@ -110,7 +112,6 @@ html {
     .project-text {
         letter-spacing: -2px;
         font-size: 22px;
-        top:0;
         text-align: $align ;
     }
 }
@@ -240,12 +241,28 @@ html {
 }
 
 /*PROJECTS*/
+.item-text {
+    width: 220px;
+    letter-spacing: -2px;
+    font-size: 22px;
+    position: absolute;
+    z-index: 1;
+    top: 178px;
+    left: 70px;    
+    animation-name: textmove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 
+    @keyframes textmove {
+        0%{ transform: translateX(0px); }
+        100%{ transform: translateX(950px); }
+    }
+}
 @mixin project-item-default ($direction) {
     position: relative;
-    margin-top: 62px;
-    width: 560px;
-    height: 420px;
+    margin-top: $margin-top;
+    width: $width;
+    height: $height;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -291,18 +308,8 @@ html {
     }
 }
 
-.item-text {
-    letter-spacing: -2px;
-    font-size: 22px;
-    animation-name: textmove;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-}
-    
-@keyframes textmove {
-    0%{ transform: translateX(0px); }
-    100%{ transform: translateX(950px); }
-}
+
+
 
 /* 404 */
 
@@ -324,3 +331,141 @@ html {
         bottom: 100px;
     }
 }
+
+/* SLIDER */
+.project-item-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px 20px;
+    padding-bottom: 50px;
+    .project-item {
+
+        position: relative;
+        margin-top: 62px;
+        width: 560px;
+        height: 420px;
+        .project-item-text {
+            padding-top: 100px;
+            text-align: right;
+        }
+        #slider {
+            input[type=radio] {
+                display: none;
+            }
+            #controls {
+                margin: -250px 0 0 0;
+                width: 100%;
+                height: 50px;
+                position: relative;
+                label {
+                    transition: opacity 0.2s ease-out;
+                    display: none;
+                    width: 50px;
+                    height: 50px;
+                    opacity: .7;
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            #bullets {
+                margin: 215px 0 0;
+                text-align: center;
+                label {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius:100%;
+                background: #ccc;
+                margin: 0 10px;
+                }
+            }
+
+            #overflow {
+                width: 100%;
+                overflow: hidden;
+                .inner {
+                    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+                    width: 400%;
+                    height: 420px;
+                    .slide {
+                        width: 25%;
+                        float:left;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                    }
+                    .slide_1 {
+                        background-image: url(../img/302-1.JPG);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .slide_2 {
+                        background-image: url(../img/302-2.JPG);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .slide_3 {
+                        background-image: url(../img/302-1.JPG);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                    .slide_4 {
+                        background-image: url(../img/302-1.JPG);
+                        background-size: cover;
+                        background-position: center;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+/* SLIDE ANIMATION*/
+#slide1:checked ~ #slides .inner {
+margin-left: 0;
+}
+#slide2:checked ~ #slides .inner {
+margin-left: -100%;
+}
+#slide3:checked ~ #slides .inner {
+margin-left: -200%;
+}
+#slide4:checked ~ #slides .inner {
+margin-left: -300%;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+float:right;
+display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(4),
+#slide3:checked ~ #controls label:nth-last-child(3),
+#slide4:checked ~ #controls label:nth-last-child(2) {
+background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+float:left;
+display: block;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+background: #444;
+}
+
