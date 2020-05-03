@@ -195,11 +195,73 @@ html {
 
 /*CV*/
 
-.cv {
-    padding-top: 150px;
-    text-align: center;
-    height: 210px;
-    background: $background;
+.cv-wrap {
+    width: 100%;
+    height: 600px;
+    .cv-item-wrap{
+        display: flex;
+        background-position: center;
+        background-position-y: 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100px;
+        filter: grayscale(100%);
+        opacity: 0.6;
+        transition: all 1s ease;
+        color: none;
+        &:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+
+            img {
+                filter: invert(1);
+            }
+            p{
+                color:white;
+            }
+            .text{
+                color: white;
+            } 
+        }
+
+        img {
+            height: 80%;
+            padding-left: 10%;
+            padding-top: 0.5%;
+            filter: invert(0);
+            transition: filter 1s ease;
+        }
+        p {
+            padding: 0 3%;
+            padding-top: 15px;
+            font-size: 30px;
+            letter-spacing: -2px;
+            transition: color 1s ease;
+        }
+        .text {
+            padding: 1% 5%;
+            color: transparent;
+            transition: color 1s ease;
+        }
+    }
+    .cv-item-wrap-1 {
+        background-image: url(../img/cv/cv1.jpg);
+    }
+    .cv-item-wrap-2 {
+        background-image: url(../img/cv/cv2.jpg);
+    }
+    .cv-item-wrap-3 {
+        background-image: url(../img/cv/cv3.jpg);
+    }
+    .cv-item-wrap-4 {
+        background-image: url(../img/cv/cv4.jpg);
+    }
+    .cv-item-wrap-5 {
+        background-image: url(../img/cv/cv5.jpg);
+    }
+    .cv-item-wrap-6 {
+        background-image: url(../img/cv/cv6.jpg);
+    }
 }
 
 /*FOOTER*/
@@ -291,8 +353,6 @@ html {
         }
     }
 }
-
-
 
 
 /* 404 */
@@ -508,6 +568,8 @@ html {
     }
 
 }
+
+
 
 
 

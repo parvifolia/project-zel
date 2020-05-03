@@ -285,11 +285,97 @@ html {
 }
 
 /*CV*/
-.cv {
-  padding-top: 150px;
-  text-align: center;
-  height: 210px;
-  background: #e4e4e4;
+.cv-wrap {
+  width: 100%;
+  height: 600px;
+}
+
+.cv-wrap .cv-item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-position: center;
+  background-position-y: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100px;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  opacity: 0.6;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: none;
+}
+
+.cv-wrap .cv-item-wrap:hover {
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  opacity: 1;
+}
+
+.cv-wrap .cv-item-wrap:hover img {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.cv-wrap .cv-item-wrap:hover p {
+  color: white;
+}
+
+.cv-wrap .cv-item-wrap:hover .text {
+  color: white;
+}
+
+.cv-wrap .cv-item-wrap img {
+  height: 80%;
+  padding-left: 10%;
+  padding-top: 0.5%;
+  -webkit-filter: invert(0);
+          filter: invert(0);
+  -webkit-transition: -webkit-filter 1s ease;
+  transition: -webkit-filter 1s ease;
+  transition: filter 1s ease;
+  transition: filter 1s ease, -webkit-filter 1s ease;
+}
+
+.cv-wrap .cv-item-wrap p {
+  padding: 0 3%;
+  padding-top: 15px;
+  font-size: 30px;
+  letter-spacing: -2px;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.cv-wrap .cv-item-wrap .text {
+  padding: 1% 5%;
+  color: transparent;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.cv-wrap .cv-item-wrap-1 {
+  background-image: url(../img/cv/cv1.jpg);
+}
+
+.cv-wrap .cv-item-wrap-2 {
+  background-image: url(../img/cv/cv2.jpg);
+}
+
+.cv-wrap .cv-item-wrap-3 {
+  background-image: url(../img/cv/cv3.jpg);
+}
+
+.cv-wrap .cv-item-wrap-4 {
+  background-image: url(../img/cv/cv4.jpg);
+}
+
+.cv-wrap .cv-item-wrap-5 {
+  background-image: url(../img/cv/cv5.jpg);
+}
+
+.cv-wrap .cv-item-wrap-6 {
+  background-image: url(../img/cv/cv6.jpg);
 }
 
 /*FOOTER*/
