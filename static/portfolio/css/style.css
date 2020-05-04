@@ -6,6 +6,11 @@
 }
 
 /* Variables */
+/*********************************************/
+html {
+  font-family: 'Comfortaa','arial';
+}
+
 /* LOGO */
 .logo {
   margin: auto;
@@ -48,16 +53,12 @@
 }*/
 }
 
-html {
-  font-family: 'Comfortaa','arial';
-}
-
 /* NAVBAR */
-.container-1 {
+.container-header {
   padding: 20px;
 }
 
-.container-1 .nav-container {
+.container-header .nav-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,7 +71,7 @@ html {
           justify-content: space-evenly;
 }
 
-.container-1 .nav-container .nav-item {
+.container-header .nav-container .nav-item {
   padding: 5px;
   text-align: center;
   width: 100px;
@@ -79,18 +80,18 @@ html {
   transition: border-bottom 1s;
 }
 
-.container-1 .nav-container .nav-item:hover {
+.container-header .nav-container .nav-item:hover {
   border-bottom: 1px solid black;
 }
 
-.container-1 .nav-container .nav-item a {
+.container-header .nav-container .nav-item a {
   color: lightgray;
   text-decoration: none;
   -webkit-transition: color 1s;
   transition: color 1s;
 }
 
-.container-1 .nav-container .nav-item a:hover {
+.container-header .nav-container .nav-item a:hover {
   color: black;
 }
 
