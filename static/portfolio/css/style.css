@@ -502,8 +502,6 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100%;
-  height: 14vh;
   opacity: 0.6;
   background-position: center;
   background-position-y: 50%;
@@ -544,6 +542,9 @@ html {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  position: relative;
+  right: 21.7%;
+  text-align: center;
   font-size: 30px;
   min-width: 140px;
   -ms-flex-item-align: center;
@@ -555,21 +556,66 @@ html {
 }
 
 .cv-items .cv-item-wrap .cv-item-text {
+  opacity: 0;
+  height: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 10% 0 22%;
-  margin-top: 2vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
   font-weight: 600;
+  font-size: calc(0.6rem + 0.5vw);
   line-height: 1.5rem;
-  opacity: 0;
+  text-align: center;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
 }
 
-.cv-items .cv-item-wrap .cv-item-text-inside-2 {
-  position: relative;
-  right: -15%;
+.cv-items .cv-item-wrap .cv-items-text-open-1 {
+  opacity: 1 !important;
+  height: 28vh;
+}
+
+.cv-items .cv-item-wrap .cv-items-text-open-2 {
+  opacity: 1 !important;
+  height: 28vh;
+}
+
+.cv-items .cv-item-wrap .cv-items-text-open-3 {
+  opacity: 1 !important;
+  height: 24vh;
+}
+
+.cv-items .cv-item-wrap .cv-items-text-open-4 {
+  opacity: 1 !important;
+  height: 14vh;
+}
+
+.cv-items .cv-item-wrap .cv-items-text-open-5 {
+  opacity: 1 !important;
+  height: 32vh;
+}
+
+.cv-items .cv-item-wrap .cv-items-text-open-6 {
+  opacity: 1 !important;
+  height: 32vh;
+}
+
+.cv-items .cv-item-wrap .cv-items-text-open-7 {
+  opacity: 1 !important;
+  height: 32vh;
+}
+
+.cv-items .cv-item-wrap .cv-items-text-open-8 {
+  opacity: 1 !important;
+  height: 20vh;
+}
+
+.cv-items .cv-item-wrap .cv-items-text-open-9 {
+  opacity: 1 !important;
+  height: 20vh;
 }
 
 .cv-items .cv-item-wrap:hover {
@@ -578,15 +624,6 @@ html {
           filter: grayscale(0%);
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: lighten;
-}
-
-.cv-items .cv-items-open {
-  height: 42vh;
-}
-
-.cv-items .cv-items-text-open {
-  margin: 3rem auto;
-  opacity: 1 !important;
 }
 
 .cv-items .cv-item-img-1 {
@@ -669,7 +706,7 @@ html {
     -webkit-box-flex: 2;
         -ms-flex: 2;
             flex: 2;
-    font-size: 19px !important;
+    font-size: 1.4rem !important;
     min-width: 140px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
