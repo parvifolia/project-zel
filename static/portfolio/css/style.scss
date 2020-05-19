@@ -10,12 +10,6 @@ $secondcolor: black;
 $background: rgb(228, 228, 228);
 $margin-top: 62px;
 $height: 75vh;
-
-@mixin mQ ($width) {
-    @media screen and (max-width: $width){
-        @content;
-    }
-}
 /*********************************************/
 html {
     font-family: 'Comfortaa','arial';
@@ -356,16 +350,19 @@ html {
 
 
 /*CV*/
+
 .cv-items {
     width: 80%;
     margin: auto;
     .cv-item-wrap{
         display: flex;
+        margin: 1rem 0;
         flex-direction: column;
-        opacity: 0.6;
-        background-position: center ;
-        background-position-y: 50%;
-        background-size: cover;
+        opacity: 0.5;
+        background-position: right;
+        background-position-y: 30%;
+        background-repeat: no-repeat;
+        background-size: fit;
         background-color: rgba(255,255,255,0);
         background-blend-mode: lighten;
         filter: grayscale(100%);
@@ -382,34 +379,32 @@ html {
         }
         .cv-item-img {
             flex: 1;
+            position: relative;
             height: 14vh;
             background-size: 8vh;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left;
             pointer-events: none;
         }
         .cv-item-title {
-            flex: 2;
+            flex: 8;
+            box-sizing: border-box;
+            padding: 1rem;
             position: relative;
-            right: 21.7%;
-            text-align: center;
-            font-size: 30px;
+            font-size: calc(1.2rem + 0.5vw);
             min-width: 140px;
             align-self: center;
             pointer-events: none;
-            padding-left: 15%;
             font-weight: 600;
         }
         .cv-item-text {
             opacity: 0;
             height: 0px;
             display: flex;
-            justify-content: center;
-            margin: auto;
             font-weight: 600;
             font-size: calc(0.6rem + 0.5vw);
             line-height: 1.5rem;
-            text-align: center;
+            text-align: left;
             transition: all 0.8s ease;
         }
         .cv-items-text-open-1 {
@@ -490,31 +485,31 @@ html {
 
     /* BACKGROUND IMAGES */
     .cv-item-wrap-1 {
-        background-image: url(../img/cv/cv1.jpg);
+        background-image: url(../img/cv/cv1.png);
     }
     .cv-item-wrap-2 {
-        background-image: url(../img/cv/cv2.jpg);
+        background-image: url(../img/cv/cv2.jpeg);
     }
     .cv-item-wrap-3 {
-        background-image: url(../img/cv/cv3.jpg);
+        background-image: url(../img/cv/cv3.jpeg);
     }
     .cv-item-wrap-4 {
-        background-image: url(../img/cv/cv4.jpg);
+        background-image: url(../img/cv/cv4.jpeg);
     }
     .cv-item-wrap-5 {
-        background-image: url(../img/cv/cv5.jpg);
+        background-image: url(../img/cv/cv5.jpeg);
     }
     .cv-item-wrap-6 {
-        background-image: url(../img/cv/cv6.jpg);
+        background-image: url(../img/cv/cv6.jpeg);
     }
     .cv-item-wrap-7 {
-        background-image: url(../img/cv/cv7.jpg);
+        background-image: url(../img/cv/cv7.png);
     }
     .cv-item-wrap-8 {
-        background-image: url(../img/cv/cv8.jpg);
+        background-image: url(../img/cv/cv8.jpeg);
     }
     .cv-item-wrap-9 {
-        background-image: url(../img/cv/cv9.jpg);
+        background-image: url(../img/cv/cv9.jpeg);
     }
 
 
@@ -524,18 +519,8 @@ html {
     .cv-items {
         width: 100%;
     }
-    .cv-item-title {
-        flex: 2;
-        font-size: 1.4rem!important;
-        min-width: 140px;
-        align-self: center;
-
-    }
     .cv-item-text {
         margin:0 5%!important;
-    }
-    .cv-items-open {
-        height: 44vh!important;
     }
 }
 
