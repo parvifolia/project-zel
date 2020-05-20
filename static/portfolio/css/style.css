@@ -91,6 +91,10 @@ html {
 }
 
 /*FOOTER*/
+.footer {
+  padding-top: 3vh;
+}
+
 .footer .footer-icon-wrap {
   margin: 15px 0px;
   display: -webkit-box;
@@ -503,11 +507,10 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  opacity: 0.5;
+  opacity: 0.6;
   background-position: right;
-  background-position-y: 30%;
   background-repeat: no-repeat;
-  background-size: fit;
+  background-size: 41vw;
   background-color: rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
   -webkit-filter: grayscale(100%);
@@ -533,9 +536,9 @@ html {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  position: relative;
   height: 14vh;
   background-size: 8vh;
+  min-width: 10vw;
   background-repeat: no-repeat;
   background-position: left;
   pointer-events: none;
@@ -547,7 +550,7 @@ html {
           flex: 8;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 1rem;
+  padding: 1rem 0;
   position: relative;
   font-size: calc(1.2rem + 0.5vw);
   min-width: 140px;
@@ -566,25 +569,42 @@ html {
   display: flex;
   font-weight: 600;
   font-size: calc(0.6rem + 0.5vw);
-  line-height: 1.5rem;
+  line-height: 1.8rem;
   text-align: left;
   -webkit-transition: all 0.8s ease;
   transition: all 0.8s ease;
 }
 
+.cv-items .cv-item-wrap .cv-item-text .projeler-intext {
+  font-size: 80%;
+  display: block;
+  color: #4e4e4e;
+  max-width: 50%;
+}
+
+.cv-items .cv-item-wrap .cv-item-language {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+}
+
+.cv-items .cv-item-wrap .cv-item-text-inside {
+  margin-right: 5%;
+}
+
 .cv-items .cv-item-wrap .cv-items-text-open-1 {
   opacity: 1 !important;
-  height: 28vh;
+  height: 30vh;
 }
 
 .cv-items .cv-item-wrap .cv-items-text-open-2 {
   opacity: 1 !important;
-  height: 28vh;
+  height: 30vh;
 }
 
 .cv-items .cv-item-wrap .cv-items-text-open-3 {
   opacity: 1 !important;
-  height: 24vh;
+  height: 26vh;
 }
 
 .cv-items .cv-item-wrap .cv-items-text-open-4 {
@@ -594,7 +614,7 @@ html {
 
 .cv-items .cv-item-wrap .cv-items-text-open-5 {
   opacity: 1 !important;
-  height: 32vh;
+  height: 34vh;
 }
 
 .cv-items .cv-item-wrap .cv-items-text-open-6 {
@@ -604,12 +624,12 @@ html {
 
 .cv-items .cv-item-wrap .cv-items-text-open-7 {
   opacity: 1 !important;
-  height: 32vh;
+  height: 34vh;
 }
 
 .cv-items .cv-item-wrap .cv-items-text-open-8 {
   opacity: 1 !important;
-  height: 20vh;
+  height: 22vh;
 }
 
 .cv-items .cv-item-wrap .cv-items-text-open-9 {
@@ -662,47 +682,87 @@ html {
 }
 
 .cv-items .cv-item-wrap-1 {
-  background-image: url(../img/cv/cv1.png);
+  background-image: url(../img/cv/cv1.jpeg);
+  background-position-y: 25%;
 }
 
 .cv-items .cv-item-wrap-2 {
   background-image: url(../img/cv/cv2.jpeg);
+  background-position-y: 50%;
 }
 
 .cv-items .cv-item-wrap-3 {
   background-image: url(../img/cv/cv3.jpeg);
+  background-position-y: 20%;
 }
 
 .cv-items .cv-item-wrap-4 {
   background-image: url(../img/cv/cv4.jpeg);
+  background-position-y: 45%;
 }
 
 .cv-items .cv-item-wrap-5 {
   background-image: url(../img/cv/cv5.jpeg);
+  background-position-y: 45%;
 }
 
 .cv-items .cv-item-wrap-6 {
   background-image: url(../img/cv/cv6.jpeg);
+  background-position-y: 38%;
 }
 
 .cv-items .cv-item-wrap-7 {
   background-image: url(../img/cv/cv7.png);
+  background-position-y: 10%;
 }
 
 .cv-items .cv-item-wrap-8 {
   background-image: url(../img/cv/cv8.jpeg);
+  background-position-y: 30%;
 }
 
 .cv-items .cv-item-wrap-9 {
   background-image: url(../img/cv/cv9.jpeg);
+  background-position-y: 38.5%;
 }
 
 @media screen and (max-width: 500px) {
   .cv-items {
     width: 100%;
   }
+  .cv-item-img {
+    min-width: 15vw !important;
+    margin: 0 5% !important;
+  }
   .cv-item-text {
     margin: 0 5% !important;
+  }
+  .cv-item-text .projeler-intext {
+    max-width: 90% !important;
+  }
+  .cv-item-wrap {
+    background-position: center !important;
+    background-size: 100vw !important;
+  }
+  .cv-items-text-open-5 {
+    height: 44vh !important;
+  }
+  .cv-items-text-open-7 {
+    height: 52vh !important;
+    max-width: 86%;
+  }
+}
+
+@media screen and (max-width: 709px) and (min-width: 501px) {
+  .cv-item-text {
+    margin: 0 5% !important;
+  }
+  .cv-item-text .projeler-intext {
+    max-width: 90% !important;
+  }
+  .cv-items-text-open-7 {
+    height: 52vh !important;
+    max-width: 86%;
   }
 }
 
