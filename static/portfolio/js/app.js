@@ -1,38 +1,26 @@
 // Query Selectors
 const cvItemWrap = document.querySelectorAll('.cv-item-wrap');
 const cvItemText = document.querySelector('.cv-item-text');
+const test = document.querySelector('.cv-items-text-open')
 
-// Tab Expanding and Text Appearing
+//Tab Expanding and Text Appearing
 cvItemWrap.forEach( item => {
     item.addEventListener('click', e =>{
-        if (e.target.classList.contains('cv-item-wrap-1')){
-            console.log(e.target)
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-1');
-        }
-        else if (e.target.classList.contains('cv-item-wrap-2')){
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-2');
-        }
-        else if (e.target.classList.contains('cv-item-wrap-3')){
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-3');
-        }
-        else if (e.target.classList.contains('cv-item-wrap-4')){
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-4');
-        }
-        else if (e.target.classList.contains('cv-item-wrap-5')){
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-5');
-        }
-        else if (e.target.classList.contains('cv-item-wrap-6')){
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-6');
-        }
-        else if (e.target.classList.contains('cv-item-wrap-7')){
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-7');
-        }
-        else if (e.target.classList.contains('cv-item-wrap-8')){
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-8');
-        }
-        else if (e.target.classList.contains('cv-item-wrap-9')){
-            e.target.children[1].children[0].classList.toggle('cv-items-text-open-9');
-        }
+        var sectionHeight = e.target.children[1].children[0].scrollHeight;
+        e.target.children[1].children[0].classList.toggle('cv-items-text-open');
+        e.target.classList.toggle('cv-items-wrap-open');
+        if (e.target.children[1].children[0].style.height != sectionHeight+'px'){
+            e.target.children[1].children[0].style.height=sectionHeight+'px';
+        } else {
+            e.target.children[1].children[0].style.height=0+'px';
+        };
+        cvItemWrap.forEach(diger =>{
+            if (diger != e.target) {
+                diger.classList.remove('cv-items-wrap-open');
+                diger.children[1].children[0].classList.remove('cv-items-text-open');
+                diger.children[1].children[0].style.height=0+'px';
+            }
+        })
     })
 })
 
