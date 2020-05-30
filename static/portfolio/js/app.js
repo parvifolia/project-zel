@@ -1,7 +1,6 @@
 // Query Selectors
 const cvItemWrap = document.querySelectorAll('.cv-item-wrap');
 const cvItemText = document.querySelector('.cv-item-text');
-const test = document.querySelector('.cv-items-text-open')
 
 //Tab Expanding and Text Appearing
 cvItemWrap.forEach( item => {

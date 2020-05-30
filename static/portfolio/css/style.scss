@@ -7,12 +7,12 @@
 /* Variables */
 $firstcolor : lightgray;
 $secondcolor: black;
-$background: rgb(228, 228, 228);
-$margin-top: 62px;
-$height: 75vh;
+$background: rgb(255, 255, 255);
+$height: 49vh;
 /*********************************************/
-html {
-    font-family: 'Comfortaa','arial';
+
+body {
+    font-family: 'Comfortaa','arial' ;
 }
 /* LOGO */
 .logo {
@@ -45,15 +45,16 @@ html {
 /* NAVBAR */
 .container-header {
     padding: 25px 15px 5px 15px;
-
+    height: 12.4vh;
     .nav-container { 
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        align-items: center;
         .nav-item {
             padding: 5px;
             text-align: center;
-            width: 100px;
+            width: auto;
             border-bottom: 1px solid transparent;
             transition: border-bottom 1s;
             &:hover {
@@ -79,34 +80,22 @@ html {
     border-bottom: 1px solid black!important
 }
 
+
 /*FOOTER*/
 .footer {
-    padding-top: 3vh;
+    padding-top: 10vh;
     .footer-icon-wrap{ 
         margin: 15px 0px;
         display: flex;
-        justify-content: space-around;
-        padding: 0 30%;
         .footer-icon img {
             width: 50px;
         }
     }
-    
-    .contact-wrap {
+    .footer-wrap{
         display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
-    .contact1,.contact2 {
-        flex: 5;
-    }
-    
-    .contact { 
-        flex: 6;
-        border-top: 1px solid gray;
-        padding-top: 9px;
-        width: 400px;
-        text-align: center;
-    }
-    
     .parvifolia {
         margin:10px;
         font-size: 13px;
@@ -116,93 +105,121 @@ html {
 }
 
 /* PORTFOLIO */
-@mixin wrapdefault ($align) {
-    width: 47.5%;
-    min-width: 200px;
+@mixin wrapdefault () {
+    margin: 16vh auto;
+    width: 35vw;
+    min-width: 300px;
     height: $height;
-    background-size: cover;
     background-position: center;
+    background-size: 100%;
     background-repeat: no-repeat;
-    margin-bottom: 50px;
     .project-link {
         height: $height;
     }
 
     a{
         text-decoration: none;
+        display: block;
         color: transparent;
         transition: color 1s;
         &:hover {
-            color: $secondcolor;
+            color: darkgray;
         }
     }
 
     .project-text {
-        letter-spacing: -2px;
-        font-size: 22px;
-        text-align: $align ;
+        position: relative;
+        top: 48vh;
+        letter-spacing: 2px;
+        font-size: 2rem;
+        text-align: center ;
     }
 }
 .projects-wrap-background {
     background: $background;
     .projects-wrap {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: auto;
         width: 90%;
-        padding-top: 50px;
-        
+
+        .arrow{
+            width: 50%;
+            object-fit: fit;
+        }
+        .carousel-control-next,.carousel-control-prev{
+            opacity: 0.1;
+            &:hover{
+                opacity: 0.4;
+            }
+        }
+
         .project-wrap-1 {
-            @include wrapdefault(left);
-            background-image:url(../img/402-2.JPG);
-            transition: all 1s;
+            @include wrapdefault();
+            background-image:url(../img/home/402sketch.png);
+            transition: background-image 1.2s ease-in-out;
             &:hover {
-                background-image: url(../img/402-1.jpg);
+                background-image: url(../img/home/402render.jpg);
             }
-
-
         }
-
         .project-wrap-2 {
-            @include wrapdefault(right);
-            background-image:url(../img/401-2.JPG);
-            transition: all 1s;
+            @include wrapdefault();
+            background-image:url(../img/home/401sketch.png);
+            transition: background-image 1.2s ease-in-out;
             &:hover {
-                background-image: url(../img/401-1.JPG)
+                background-image: url(../img/home/401render.jpg)
             }
         }
-    
         .project-wrap-3 {
-            @include wrapdefault(left);
-            background-image:url(../img/302-2.JPG);
-            transition: all 1s;
+            @include wrapdefault();
+            background-image:url(../img/home/302sketch.png);
+            transition: background-image 1.2s ease-in;
             &:hover {
-                background-image:url(../img/302-1.JPG);
+                background-image:url(../img/home/302render.jpg);
             }
         }
-
         .project-wrap-4 {
-            @include wrapdefault(right);
-            background-image:url(../img/301-2.JPG);
-            transition: all 1s;
+            @include wrapdefault();
+            background-image:url(../img/home/301sketch.png);
+            transition: background-image 1.2s ease-in;
             &:hover {
-                background-image:url(../img/301-1.JPG);
+                background-image:url(../img/home/301render.jpg);
             }
         }
     }
-
 }
 @media screen and (max-width:500px) {
     .projects-wrap {
         justify-content: center!important;
         .project-wrap-1,.project-wrap-2,.project-wrap-3,.project-wrap-4{
             width: 100%!important;
+            margin: 0!important;
+            height: 40vh!important;
             .project-text {
-                text-align: center!important ;
+                position: relative!important;
+                top: 36vh!important;
             }
-            a {
-                color: black!important;
+            .project-link {
+                height: 40vh!important;
+            }
+        }
+    }
+}
+@media screen and (min-height:1023px) {
+    .projects-wrap {
+        justify-content: center!important;
+        .project-wrap-1,.project-wrap-2,.project-wrap-3,.project-wrap-4{
+            width: 90%!important;
+            margin: 1vh auto!important;
+            height: 40vh!important;
+            .project-text {
+                position: relative!important;
+                top: 36vh!important;
+            }
+            .project-link {
+                height: 40vh!important;
             }
         }
     }
@@ -279,25 +296,25 @@ html {
                             height: 100%;
                         }
                         .slide_1 {
-                            background-image: url(../img/302-1.JPG);
+                            background-image: url(../img/402-6.jpeg);
                             background-size: cover;
                             background-position: center;
                             background-repeat: no-repeat;
                         }
                         .slide_2 {
-                            background-image: url(../img/302-2.JPG);
+                            background-image: url(../img/402-7.jpeg);
                             background-size: cover;
                             background-position: center;
                             background-repeat: no-repeat;
                         }
                         .slide_3 {
-                            background-image: url(../img/302-1.JPG);
+                            background-image: url(../img/402-6.jpeg);
                             background-size: cover;
                             background-position: center;
                             background-repeat: no-repeat;
                         }
                         .slide_4 {
-                            background-image: url(../img/302-1.JPG);
+                            background-image: url(../img/402-7.jpeg);
                             background-size: cover;
                             background-position: center;
                             background-repeat: no-repeat;
@@ -320,6 +337,7 @@ html {
             }
         }
     }
+
 }
 
 /*ABOUT*/
@@ -383,6 +401,7 @@ html {
         .cv-item-div2{
             pointer-events: none;
             overflow: hidden;
+            padding: 0 0.4rem 0.4rem 0;
         }
         .cv-item-img {
             flex: 1;
@@ -613,7 +632,7 @@ html {
 
 }
 
-/* TITLE ANIMATION */ 
+/* TITLE ANIMATION 
 @media screen and (max-width:3000px) {
     .item-text {
         width: 100%;
@@ -659,6 +678,6 @@ html {
         }
     }
 
-}
+}*/ 
 
 
