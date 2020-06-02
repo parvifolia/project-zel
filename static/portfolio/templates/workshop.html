@@ -1,0 +1,155 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="{% static 'portfolio/img/icon/myIcon.ico'%}" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
+        <link rel="stylesheet" href="{%static 'portfolio/css/bootstrap.min.css'%}">
+        <link rel="stylesheet" href="{%static 'portfolio/css/style.css'%}">
+        <title>Workshop | Gülşen Aktaş</title>
+    </head>
+
+    <header>
+        <div class="header-wrap">
+
+            <div class="header-items">
+
+                <div class="logo-wrap">
+                    <div class="logo">
+                        <a id='gulsen' href="{%url 'home'%}">GÜLŞEN</a>
+                        <a id='aktas' href="{%url 'home'%}">AKTAŞ </a>
+                    </div>
+    
+                    <div class="nav-portfolio">
+                        portfolio
+                    </div>
+                </div>
+                
+                <div class="nav-wrap">
+
+                    <div class="nav-item">
+                        <a href=" {% url 'about'%} ">hakkında</a>
+                    </div>
+
+
+                    <div class="nav-item">
+                        <a href="{% url 'home'%}">proje</a>
+                    </div>
+
+                    <div class="nav-item nav-item-acvite">
+                        <a href="#">workshop</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="{% url 'cizim'%}">çizim</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="{% url 'cv'%}">cv</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <body>
+        <div class="conteiner-workshop">
+
+            <div class="workshop-wrap-background">
+
+                <div class="workshop-wrap" onclick="">
+
+                    <div class="workshop-wrap-1">
+                        <a href="{%url 'm402'%}">
+                        <div class="project-link">
+                            <div class="project-text">
+                                FLANEUR
+                            </div>
+                        </div> 
+                        </a>
+                    </div>
+
+                    <div class="workshop-wrap-2">
+                        <a href="{%url 'm401'%}">
+                            <div class="project-link">
+                                <div class="project-text">
+                                    GÖZ
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="workshop-wrap-3">
+                        <a href="{%url 'm302'%}">
+                            <div class="project-link">
+                                <div class="project-text">
+                                    MEYDAN
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </body>
+
+    <footer>
+
+        <div class="footer">
+            <div class="footer-wrap">
+
+                <div class="footer-icon-wrap">
+
+                    <!-- <div class="footer-icon">
+                        <a href="mailto:aaktasgulsen@gmail.com">
+                            <img src="{% static 'portfolio/img/icon/mail.png' %}">                             
+                        </a>
+                    </div> -->
+                    <div class="footer-icon">
+                        <a href="http://linkedin.com/in/gülşen-aktaş-64b817130" target="_blank">
+                            <img src="{% static 'portfolio/img/icon/in.png' %}">
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="https://www.instagram.com/glsnnakts" target="_blank">
+                            <img src="{% static 'portfolio/img/icon/ins.png' %}">
+                        </a>
+                    </div>
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/glsnnakts" target="_blank">
+                            <img src="{% static 'portfolio/img/icon/f.png' %}">
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="parvifolia-wrap">
+                    <div class="parvifolia-wrap-inside">
+                        <div class="parvifolia">
+                            <a href="mailto:aaktasgulsen@gmail.com" target="_blank">aaktasgulsen@gmail.com</a>
+                        </div>
+                        <div class="parvifolia">
+                            designed by parvifolia | 2020 copyright
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </footer>
+
+</html>

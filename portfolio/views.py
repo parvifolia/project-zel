@@ -19,8 +19,11 @@ def about_view(request):
 def cv_view(request):
     return render (request, "portfolio/templates/cv.html", {})
 
+def workshop_view(request):
+    return render (request, "portfolio/templates/workshop.html", {})
+
 def cizim_view(request):
     return render (request, "portfolio/templates/draw.html", {})
 
 def page404(request, exception=None):
-    return render (request, "portfolio/templates/404.html", status=404)
+    return render (request, "portfolio/templates/404.html", status=404) 

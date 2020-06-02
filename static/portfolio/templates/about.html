@@ -6,7 +6,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
+        <link rel="shortcut icon" href="{% static 'portfolio/img/icon/myIcon.ico'%}" type="image/x-icon">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
+        <link rel="stylesheet" href="{%static 'portfolio/css/bootstrap.min.css'%}">
         <link rel="stylesheet" href="{%static 'portfolio/css/style.css'%}">
         <title>About | Gülşen Aktaş</title>   
     </head>
@@ -18,8 +20,8 @@
 
                 <div class="logo-wrap">
                     <div class="logo">
-                        <a id='gulsen' href='#'>GÜLŞEN</a>
-                        <a id='aktas' href="#">AKTAŞ </a>
+                        <a id='gulsen' href="{%url 'home'%}">GÜLŞEN</a>
+                        <a id='aktas' href="{%url 'home'%}">AKTAŞ </a>
                     </div>
     
                     <div class="nav-portfolio">
@@ -30,7 +32,7 @@
                 <div class="nav-wrap">
 
                     <div class="nav-item  nav-item-acvite">
-                        <a href=" # ">hakkında</a>
+                        <a href="#">hakkında</a>
                     </div>
 
 
@@ -57,22 +59,19 @@
     </header>
 
     <body>
-
         <div class="about-wrap">
             <div class="about-img">
             </div>
 
             <div class="about-text">
-
                 <div class="about-text-content">
                     1995 doğumlu lise yıllarında tasarıma merak salarak bu yola koyulan ve nihayetinde 5 senelik üniversite eğitimini tamamlayıp Mimar ünvanını kazanmış bir tasarımcı.<br><br>
                     Eğitim hayatı boyunca workshoplar ve gönüllü çalışmalar kovalamış aynı zamanda Jazz tutkunu, amatör bir dansçı. <br><br>
                     Yenilikler karşısında her zaman heyecanlanır ve öğrenmek için her fırsatı değerlendirir. İlk iş deneyimi Srilankaya gidip buranın başarılı mimarlarıyla çalışmak oldu.<br><br>
                     Son zamanlarda çalışmalarına, dijital ve tasarımın bir araya geldiği UX-UI Designer alanında devam etmekte.                </div>
             </div>
-
         </div>
-                
+
     </body>
 
     <footer>

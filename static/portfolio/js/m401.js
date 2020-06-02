@@ -34,7 +34,7 @@ function showNewText2(){
     firstText.innerHTML=`
     Havran merkezinde tarihi ve manevi değere sahip kullanılmayan zeytinyağı fabrikası ve çevresinin tasarımı projesidir.
     Kültürel zenginlikleri ile bilinen bu ilçede alan gezisi ve yerel halkla iletişime geçilerek ihtiyaç listesi 
-    oluşturlmuştur.
+    oluşturulmuştur.
     `;
     $(".m402-text-relative").fadeIn(300);
 }

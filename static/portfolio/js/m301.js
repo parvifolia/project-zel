@@ -11,8 +11,8 @@ $('.carousel').carousel('pause');
 let watchingClass1=carousel[0];
 function showNewText1(){
     firstText.innerHTML=`<div style="text-align: left;">Moda evi<br><br>
-    2017-2018 Güz Dönemi<br><br>
-    Havran/ Balıkesir
+    2016-2017 Güz Dönemi<br><br>
+    Levent/ İstanbul
     </div><br><br>
     `;
     $(".m402-text-relative").fadeIn(300);

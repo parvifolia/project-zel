@@ -8,10 +8,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="{% static 'portfolio/img/icon/myIcon.ico'%}" type="image/x-icon">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap">
+        <link rel="stylesheet" href="{%static 'portfolio/css/bootstrap.min.css'%}">
         <link rel="stylesheet" href="{%static 'portfolio/css/style.css'%}">
         <title>CV | Gülşen Aktaş</title>
-
-        
     </head>
 
     <header>
@@ -21,8 +20,8 @@
 
                 <div class="logo-wrap">
                     <div class="logo">
-                        <a id='gulsen' href='#'>GÜLŞEN</a>
-                        <a id='aktas' href="#">AKTAŞ </a>
+                        <a id='gulsen' href="{%url 'home'%}">GÜLŞEN</a>
+                        <a id='aktas' href="{%url 'home'%}">AKTAŞ </a>
                     </div>
     
                     <div class="nav-portfolio">
@@ -212,6 +211,7 @@
                 </div>
             </div>
         </div>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="{%static 'portfolio/js/cv.js'%}"></script>
 
     </body>
