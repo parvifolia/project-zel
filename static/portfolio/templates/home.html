@@ -1,4 +1,4 @@
-{% load static%}
+{%load static%}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,27 +17,46 @@
     </head>
 
     <header>
-        <div class="container-header">
+        <div class="header-wrap">
+
+            <div class="header-items">
+
+                <div class="logo-wrap">
+                    <div class="logo">
+                        <a id='gulsen' href='#'>GÜLŞEN</a>
+                        <a id='aktas' href="#">AKTAŞ </a>
+                    </div>
+    
+                    <div class="nav-portfolio">
+                        portfolio
+                    </div>
+                </div>
+                
+                <div class="nav-wrap">
+
+                    <div class="nav-item">
+                        <a href=" {% url 'about'%} ">hakkında</a>
+                    </div>
 
 
-            <div class="nav-container">
-                <div class="logo">
-                    <a id='gulsen' href='#'>GÜLŞEN</a>
-                    <a id='aktas' href="#">AKTAŞ</a>
+                    <div class="nav-item nav-item-acvite">
+                        <a href="#">proje</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="{% url 'workshop'%}">workshop</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="{% url 'cizim'%}">çizim</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="{% url 'cv'%}">cv</a>
+                    </div>
+
                 </div>
 
-                <div class="nav-item">
-                    <a href=" {% url 'about'%} ">HAKKINDA</a>
-                </div>
-
-
-                <div class="nav-item nav-item-acvite">
-                    <a href="#">PORTFOLYO</a>
-                </div>
-
-                <div class="nav-item">
-                    <a href="{% url 'cv'%}">CV</a>
-                </div>
             </div>
         </div>
     </header>
@@ -123,38 +142,38 @@
             <div class="footer-wrap">
 
                 <div class="footer-icon-wrap">
-                    <div class="footer-icon">
+
+                    <!-- <div class="footer-icon">
                         <a href="mailto:aaktasgulsen@gmail.com">
                             <img src="{% static 'portfolio/img/icon/mail.png' %}">                             
                         </a>
-                    </div>
+                    </div> -->
                     <div class="footer-icon">
-                        <a href="#">
+                        <a href="http://linkedin.com/in/gülşen-aktaş-64b817130" target="_blank">
                             <img src="{% static 'portfolio/img/icon/in.png' %}">
                         </a>
                     </div>
                     <div class="footer-icon">
-                        <a href="https://www.facebook.com/glsnnakts">
-                            <img src="{% static 'portfolio/img/icon/f.png' %}">
+                        <a href="https://www.instagram.com/glsnnakts" target="_blank">
+                            <img src="{% static 'portfolio/img/icon/ins.png' %}">
                         </a>
                     </div>
                     <div class="footer-icon">
-                        <a href="https://www.instagram.com/glsnnakts">
-                            <img src="{% static 'portfolio/img/icon/ins.png' %}">
+                        <a href="https://www.facebook.com/glsnnakts" target="_blank">
+                            <img src="{% static 'portfolio/img/icon/f.png' %}">
                         </a>
                     </div>
                 </div>
 
 
                 <div class="parvifolia-wrap">
-                    <div class="parvifolia">
-                        designed by parvifolia | 2020 copyright
-                    </div>
-                    <div class="parvifolia">
-                        special thanks for volunteer feedback team;
-                    </div>
-                    <div class="parvifolia">
-                        Gülşen, Mali, Furki, İko
+                    <div class="parvifolia-wrap-inside">
+                        <div class="parvifolia">
+                            <a href="mailto:aaktasgulsen@gmail.com" target="_blank">aaktasgulsen@gmail.com</a>
+                        </div>
+                        <div class="parvifolia">
+                            designed by parvifolia | 2020 copyright
+                        </div>
                     </div>
                 </div>
                 

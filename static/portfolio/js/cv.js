@@ -21,5 +21,4 @@ cvItemWrap.forEach( item => {
             }
         })
     })
-})
-
+});

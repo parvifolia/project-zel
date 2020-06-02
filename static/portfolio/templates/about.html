@@ -1,4 +1,4 @@
-{% load static %}
+{%load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -14,27 +14,48 @@
     </head>
 
     <header>
-        <div class="container-header">  
-            <div class="logo">
-                <a id='gulsen' href='#'>GÜLŞEN</a>
-                <a id='aktas' href="#">AKTAŞ</a>
+        <div class="header-wrap">
+
+            <div class="header-items">
+
+                <div class="logo-wrap">
+                    <div class="logo">
+                        <a id='gulsen' href='#'>GÜLŞEN</a>
+                        <a id='aktas' href="#">AKTAŞ </a>
+                    </div>
+    
+                    <div class="nav-portfolio">
+                        portfolio
+                    </div>
+                </div>
+                
+                <div class="nav-wrap">
+
+                    <div class="nav-item nav-item-acvite">
+                        <a href="#">hakkında</a>
+                    </div>
+
+
+                    <div class="nav-item">
+                        <a href="{% url 'home'%}">proje</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="{% url 'workshop'%}">workshop</a>
+                    </div>
+
+                    <div class="nav-item">
+                        <a href="{% url 'cizim'%}">çizim</a>
+                    </div>
+
+                    <div class="nav-item ">
+                        <a href="{% url 'cv'%}">cv</a>
+                    </div>
+
+                </div>
+
             </div>
-
-            <div class="nav-container">
-                <div class="nav-item nav-item-acvite">
-                    <a href="#">HAKKINDA</a>
-                </div>
-
-
-                <div class="nav-item ">
-                    <a href="{% url 'home'%}">PORTFOLYO</a>
-                </div>
-
-                <div class="nav-item">
-                    <a href="{% url 'cv'%}">CV</a>
-                </div>
-            </div>
-        </div> 
+        </div>
     </header>
 
     <body>
@@ -43,13 +64,18 @@
             <div class="about-img">
             </div>
 
-            <div class="about-text-h1">
-                GÜLŞEN AKTAŞ
+            <div class="about-text">
+                <div class="about-text-h1">
+                    GÜLŞEN AKTAŞ
+                </div>
+
+                <div class="about-text-content">
+                    1995 doğumlu lise yıllarında tasarıma merak salarak bu yola koyulan ve nihayetinde 5 senelik üniversite eğitimini tamamlayıp Mimar ünvanını kazanmış bir tasarımcı.<br><br>
+                    Eğitim hayatı boyunca workshoplar ve gönüllü çalışmalar kovalamış aynı zamanda Jazz tutkunu, amatör bir dansçı. <br><br>
+                    Yenilikler karşısında her zaman heyecanlanır ve öğrenmek için her fırsatı değerlendirir. İlk iş deneyimi Srilankaya gidip buranın başarılı mimarlarıyla çalışmak oldu.<br><br>
+                    Son zamanlarda çalışmalarına, dijital ve tasarımın bir araya geldiği UX-UI Designer alanında devam etmekte.                </div>
             </div>
 
-            <div class="about-text-content">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam officiis maxime assumenda et adipisci, sequi repellendus, impedit accusantium corporis amet, vitae voluptate atque laborum deleniti! A quaerat sit, eaque ad itaque minima cumque recusandae molestiae reiciendis veniam sapiente tenetur vero, voluptas porro! Rem quibusdam, porro reiciendis, ipsa officia asperiores beatae voluptatum optio vitae pariatur ut ratione consequatur. Velit qui deleniti quas molestiae reprehenderit commodi laborum dicta soluta pariatur debitis impedit possimus culpa exercitationem, tempora esse aliquid id sit, neque itaque. Consequuntur id ipsam aspernatur iure repellat, harum aliquid omnis esse ipsa! Exercitationem ad temporibus vero rem quidem nihil earum quo.
-            </div>
         </div>
                 
     </body>
@@ -60,19 +86,15 @@
             <div class="footer-wrap">
 
                 <div class="footer-icon-wrap">
-                    <div class="footer-icon">
+
+                    <!-- <div class="footer-icon">
                         <a href="mailto:aaktasgulsen@gmail.com">
                             <img src="{% static 'portfolio/img/icon/mail.png' %}">                             
                         </a>
-                    </div>
+                    </div> -->
                     <div class="footer-icon">
                         <a href="#">
                             <img src="{% static 'portfolio/img/icon/in.png' %}">
-                        </a>
-                    </div>
-                    <div class="footer-icon">
-                        <a href="https://www.facebook.com/glsnnakts">
-                            <img src="{% static 'portfolio/img/icon/f.png' %}">
                         </a>
                     </div>
                     <div class="footer-icon">
@@ -80,18 +102,22 @@
                             <img src="{% static 'portfolio/img/icon/ins.png' %}">
                         </a>
                     </div>
+                    <div class="footer-icon">
+                        <a href="https://www.facebook.com/glsnnakts">
+                            <img src="{% static 'portfolio/img/icon/f.png' %}">
+                        </a>
+                    </div>
                 </div>
 
 
                 <div class="parvifolia-wrap">
-                    <div class="parvifolia">
-                        designed by parvifolia | 2020 copyright
-                    </div>
-                    <div class="parvifolia">
-                        special thanks for volunteer feedback team;
-                    </div>
-                    <div class="parvifolia">
-                        Gülşen, Mali, Furki, İko
+                    <div class="parvifolia-wrap-inside">
+                        <div class="parvifolia">
+                            aaktasgulsen@gmail.com
+                        </div>
+                        <div class="parvifolia">
+                            designed by parvifolia | 2020 copyright
+                        </div>
                     </div>
                 </div>
                 

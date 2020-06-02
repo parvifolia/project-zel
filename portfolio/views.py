@@ -4,7 +4,7 @@ def portfolio_view(request):
     return render (request, "portfolio/templates/home.html", {})
 
 def m402(request):
-    return render (request, "portfolio/templates/projects/m402.html", {})
+    return render (request, "portfolio/templates/m402.html", {})
 
 
 def about_view(request):
