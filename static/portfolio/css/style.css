@@ -51,6 +51,9 @@ body:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'Comfortaa', 'arial';
 }
 
@@ -157,8 +160,6 @@ body:after {
 
 .projects-wrap-background .projects-wrap .arrow {
   width: 50%;
-  -o-object-fit: fit;
-     object-fit: fit;
 }
 
 .projects-wrap-background .projects-wrap .carousel-control-next, .projects-wrap-background .projects-wrap .carousel-control-prev {
@@ -382,27 +383,11 @@ body:after {
   margin: auto;
 }
 
-.m402-wrapper .carousel-indicators li {
-  background-color: #222222;
-}
-
-.m402-wrapper .project-arrow {
-  width: 50%;
-}
-
-.m402-wrapper .carousel-control-next, .m402-wrapper .carousel-control-prev {
-  opacity: 0.5;
-}
-
-.m402-wrapper .carousel-control-next:hover, .m402-wrapper .carousel-control-prev:hover {
-  opacity: 0.9;
-}
-
 .m402-wrapper .m402-slider {
   margin: 6vh 0;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
 }
 
 .m402-wrapper .m402-slider .m402-item {
@@ -416,9 +401,9 @@ body:after {
 }
 
 .m402-wrapper .m402-content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 
 .m402-wrapper .m402-content .m402-title {
@@ -431,6 +416,27 @@ body:after {
   padding: 0 2rem 0 5rem;
   font-size: calc(0.5rem + 0.4vw);
   text-align: right;
+}
+
+.m402-wrapper .carousel-indicators li {
+  background-color: #222222;
+  margin-right: 8px;
+  margin-left: 8px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
+
+.m402-wrapper .project-arrow {
+  width: 50%;
+}
+
+.m402-wrapper .carousel-control-next, .m402-wrapper .carousel-control-prev {
+  opacity: 0.5;
+}
+
+.m402-wrapper .carousel-control-next:hover, .m402-wrapper .carousel-control-prev:hover {
+  opacity: 0.9;
 }
 
 /*ABOUT*/
@@ -453,14 +459,8 @@ body:after {
   margin: auto;
 }
 
-.about-wrap .about-text .about-text-h1 {
-  margin-top: 10vh;
-  text-align: center;
-  font-size: calc(0.8rem + 0.5vw);
-}
-
 .about-wrap .about-text .about-text-content {
-  margin: 6vh 0 10vh 0;
+  margin: 15vh 0 10vh 0;
   padding: 0 60px;
   font-size: calc(0.5rem + 0.4vw);
 }
@@ -790,94 +790,4 @@ body:after {
   position: relative;
   bottom: 100px;
 }
-
-/* SLIDE ANIMATION*/
-.project-item #slide1:checked ~ #slides .inner {
-  margin-left: 0;
-}
-
-.project-item #slide2:checked ~ #slides .inner {
-  margin-left: -100%;
-}
-
-.project-item #slide3:checked ~ #slides .inner {
-  margin-left: -200%;
-}
-
-.project-item #slide4:checked ~ #slides .inner {
-  margin-left: -300%;
-}
-
-.project-item #slide1:checked ~ #controls label:nth-child(2),
-.project-item #slide2:checked ~ #controls label:nth-child(3),
-.project-item #slide3:checked ~ #controls label:nth-child(4),
-.project-item #slide4:checked ~ #controls label:nth-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
-  float: right;
-  display: block;
-}
-
-.project-item #slide1:checked ~ #controls label:nth-last-child(1),
-.project-item #slide2:checked ~ #controls label:nth-last-child(4),
-.project-item #slide3:checked ~ #controls label:nth-last-child(3),
-.project-item #slide4:checked ~ #controls label:nth-last-child(2) {
-  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-  float: left;
-  display: block;
-}
-
-.project-item #slide1:checked ~ #bullets label:nth-child(1),
-.project-item #slide2:checked ~ #bullets label:nth-child(2),
-.project-item #slide3:checked ~ #bullets label:nth-child(3),
-.project-item #slide4:checked ~ #bullets label:nth-child(4) {
-  background: #444;
-}
-
-/* TITLE ANIMATION 
-@media screen and (max-width:3000px) {
-    .item-text {
-        width: 100%;
-        letter-spacing: -2px;
-        font-size: 22px;
-        z-index: 1;
-        position: relative;
-        text-align: right;
-        animation-name: textmove2;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-
-        @keyframes textmove2 {
-            0%{ transform: translateX(-174%) ; }
-            100%{ transform: translateX(0%) ; }
-        }
-    }
-
-}
-@media screen and (max-width:500px) {
-
-
-    .project-item-text {
-        text-align: center!important;
-    }
-
-    .item-text {
-        width: 100%;
-        letter-spacing: -2px;
-        font-size: 22px;
-        z-index: 1;
-        text-align: center;
-        position: relative;
-        margin-top: 30px;
-        margin-bottom: -30px;
-        animation-name: textmove2;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
-
-        @keyframes textmove2 {
-            0%{ transform: translateY(-500px) ; }
-            100%{ transform: translateY(0px) ; }
-        }
-    }
-
-}*/
 /*# sourceMappingURL=style.css.map */

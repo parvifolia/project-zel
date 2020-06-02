@@ -10,10 +10,10 @@ $('.carousel').carousel('pause');
 //first text 
 let watchingClass1=carousel[0];
 function showNewText1(){
-    firstText.innerHTML=`
-    <div style="text-align: left;">Karma Yapı Projesi<br><br>
-    2017-2018 Bahar Dönemi Mezuniyet Projesi<br><br>
-    Etiler / Rumeli hisarüstü / İstanbul</div><br><br>
+    firstText.innerHTML=`<div style="text-align: left;">Endüstri Müzesi ve Kültür-Sanat Merkezi<br><br>
+    2017-2018 Güz Dönemi<br><br>
+    Havran/ Balıkesir
+    </div>
     `;
     $(".m402-text-relative").fadeIn(300);
 }
@@ -26,12 +26,15 @@ let classWatcher1 = new ClassWatcher(watchingClass1, 'active', workOnClassAdd1,w
 
 
 
+
+
 //second text
 let watchingClass2=carousel[1];
 function showNewText2(){
     firstText.innerHTML=`
-    Proje alanı, Boğaziçi Üniversitesi Kuzey Kampüsü yakınlarında öğrenci, akademisyen ve yerel halkın yoğunlukta 
-    olduğu; otobüs, metro gibi ulaşım ağlarına yakın merkezi bir konumdadır.
+    Havran merkezinde tarihi ve manevi değere sahip kullanılmayan zeytinyağı fabrikası ve çevresinin tasarımı projesidir.
+    Kültürel zenginlikleri ile bilinen bu ilçede alan gezisi ve yerel halkla iletişime geçilerek ihtiyaç listesi 
+    oluşturlmuştur.
     `;
     $(".m402-text-relative").fadeIn(300);
 }
@@ -42,13 +45,14 @@ let classWatcher2 = new ClassWatcher(watchingClass2, 'active', workOnClassAdd2,w
 
 
 
+
 //third text
 let watchingClass3=carousel[2]
 function showNewText3(){
     firstText.innerHTML=`
-    Alışveriş-Beslenme, Barınma, Kültür Merkezi ve Spor Kompleksi gibi alanları içeren karma yapı projesidir. 
-    Yapılan ihtiyaç listesi ve analizler sonucunda sirkülasyon, ulaşabilirlik, manzara, fiziki çevre faktörleri 
-    referans alınarak yapılar konumlandırılmış ve son halini almıştır.
+    Endüstri müzesine dönüştürülen tarihi fabrikanın yanı sıra sergi alanı ve atölyelerden oluşan kültür-sanat merkezi, 
+    kütüphane ve yöre lezzetlerini sunulduğu restoran tasarlanmıştır. Atölye çıktıları veya yerel halkın üretimlerinin 
+    sergilenmesi ve ihtiyaç sahiplerine iletilmesi amacıyla peyzajda açık sergi alanlarına yer verilmiştir.
     `;
     $(".m402-text-relative").fadeIn(300);
 }
@@ -58,13 +62,14 @@ function workOnClassAdd3() {
 let classWatcher3 = new ClassWatcher(watchingClass3, 'active', workOnClassAdd3,workOnClassRemoval)
 
 
+
 //fourth text
 let watchingClass4=carousel[3]
 function showNewText4(){
     firstText.innerHTML=`
-    Sosyal alan odaklı peyzaj projesi çalışılmıştır. Açık sergi ve etkinlik alanları, sahne,  spor ve oyun alanları, 
-    oturma ve yeşil gibi alanlara yer verilmiştir. Kullanıcı kitlesi öğrenci ve akademisyen olucak barınma yapıları 
-    manzara odaklı, sosyal alanlara kolay ulaşabilir fakat mesafeli bi bölgeye konumlandırılmıştır. 
+    Çocukların vakit geçirebilicekleri parklar, gösteri, sinema gibi etkinliklerin düzenlenebiliceği açık sahne 
+    peyzajda konumlandırılmıştır. Son olarak ilçenin yeşil alan ihtiyacını karşılayacak yeşil alanlar eklenerek proje 
+    son haline getirilmiştir.
     `;
     $(".m402-text-relative").fadeIn(300);
 }
@@ -72,4 +77,5 @@ function workOnClassAdd4() {
     $(".m402-text-relative").fadeOut(300,showNewText4)
 }
 let classWatcher4 = new ClassWatcher(watchingClass4, 'active', workOnClassAdd4,workOnClassRemoval)
+
 
