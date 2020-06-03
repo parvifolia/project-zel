@@ -29,6 +29,9 @@ urlpatterns = [
     path ('m401/', views.m401, name= "m401"),
     path ('m302/', views.m302, name= "m302"),
     path ('m301/', views.m301, name= "m301"),
+    path ('workshop/flaneur/', views.flaneur, name= "flaneur"),
+    path ('workshop/goz/', views.goz, name= "goz"),
+    path ('workshop/meydan', views.meydan, name= "meydan"),
 ]
 
 handler404 = 'portfolio.views.page404'

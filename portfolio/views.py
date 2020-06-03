@@ -22,6 +22,13 @@ def cv_view(request):
 def workshop_view(request):
     return render (request, "portfolio/templates/workshop.html", {})
 
+def flaneur(request):
+    return render (request, "portfolio/templates/flaneur.html", {})
+def goz(request):
+    return render (request, "portfolio/templates/goz.html", {})
+def meydan(request):
+    return render (request, "portfolio/templates/meydan.html", {})
+
 def cizim_view(request):
     return render (request, "portfolio/templates/draw.html", {})
 

@@ -232,50 +232,6 @@ body:after{
     }
 }
 
-/* WORKSHOP */
-.workshop-wrap-background{
-    .workshop-wrap{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin: auto;
-        width: 90%;
-    }
-}
-.workshop-wrap-1 {
-    @include wrapdefault();
-    margin-right:0.5rem;
-    flex: 1;
-    background-image:url(../img/workshop/flaneur/14.jpg);
-    background-size: cover;
-    filter: grayscale(100%);
-    transition: filter 1.2s ease-in-out;
-    &:hover {
-        filter: none;
-    }
-}
-.workshop-wrap-2 {
-    @include wrapdefault();
-    margin-right:0.5rem;
-    flex: 1;
-    background-image:url(../img/workshop/göz/4.jpg);
-    filter: grayscale(100%);
-    transition: filter 1.2s ease-in-out;
-    &:hover {
-        filter: none;
-    }
-}
-.workshop-wrap-3 {
-    @include wrapdefault();
-    flex: 1;
-    background-size: cover;
-    background-image:url(../img/workshop/meydan/1.jpg);
-    filter: grayscale(100%);
-    transition: filter 1.2s ease-in-out;
-    &:hover {
-        filter: none;
-    }
-}
 
 /*PROJECTS*/
 .m402-wrapper{
@@ -311,8 +267,6 @@ body:after{
     .carousel-indicators li{
         background-color: rgb(255, 255, 255);
         border: 1px solid darkgray;
-        margin-right: 8px;
-        margin-left: 8px;
         width: 10px;
         height: 10px;
         border-radius: 100%;
@@ -329,6 +283,79 @@ body:after{
             opacity: 0.9;
         }
     }
+}
+
+/* WORKSHOP */
+.workshop-wrap-background{
+    .workshop-wrap{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: auto;
+        width: 90%;
+        .workshop-wrap-1 {
+            @include wrapdefault();
+            margin-right:0.5rem;
+            flex: 1;
+            background-image:url(../img/workshop/flaneur/14.jpg);
+            background-size: cover;
+            filter: grayscale(100%);
+            transition: filter 1.2s ease-in-out;
+            &:hover {
+                filter: none;
+            }
+        }
+        .workshop-wrap-2 {
+            @include wrapdefault();
+            margin-right:0.5rem;
+            flex: 1;
+            background-image:url(../img/workshop/goz/4.jpg);
+            filter: grayscale(100%);
+            transition: filter 1.2s ease-in-out;
+            &:hover {
+                filter: none;
+            }
+        }
+        .workshop-wrap-3 {
+            @include wrapdefault();
+            flex: 1;
+            background-size: cover;
+            background-image:url(../img/workshop/meydan/1.jpg);
+            filter: grayscale(100%);
+            transition: filter 1.2s ease-in-out;
+            &:hover {
+                filter: none;
+            }
+        }
+    }
+}
+
+/*FLANEUR*/
+.flaneur-slider{
+    .flaneur-item{
+        height: 70vh!important;
+        img{
+            height: 70vh!important;
+            object-fit: cover!important;
+        }
+    }
+    .flaneur-item-2{
+        img{
+            object-fit: scale-down!important;
+        }
+    }
+}
+
+/* GÖZ */
+.goz-slider{
+    .goz-item{
+        height: 75vh!important;
+        img{
+            height: 75vh!important;
+            object-fit: scale-down!important;
+        }
+    }
+
 }
 
 /*ABOUT*/

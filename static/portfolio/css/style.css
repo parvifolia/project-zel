@@ -377,172 +377,6 @@ body:after {
   }
 }
 
-/* WORKSHOP */
-.workshop-wrap-background .workshop-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: auto;
-  width: 90%;
-}
-
-.workshop-wrap-1 {
-  margin: 16vh auto;
-  width: 35vw;
-  min-width: 300px;
-  height: 49vh;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-right: 0.5rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-image: url(../img/workshop/flaneur/14.jpg);
-  background-size: cover;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 1.2s ease-in-out;
-  transition: -webkit-filter 1.2s ease-in-out;
-  transition: filter 1.2s ease-in-out;
-  transition: filter 1.2s ease-in-out, -webkit-filter 1.2s ease-in-out;
-}
-
-.workshop-wrap-1 .project-link {
-  height: 49vh;
-}
-
-.workshop-wrap-1 a {
-  text-decoration: none;
-  display: block;
-  color: transparent;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-}
-
-.workshop-wrap-1 a:hover {
-  color: darkgray;
-}
-
-.workshop-wrap-1 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.workshop-wrap-1:hover {
-  -webkit-filter: none;
-          filter: none;
-}
-
-.workshop-wrap-2 {
-  margin: 16vh auto;
-  width: 35vw;
-  min-width: 300px;
-  height: 49vh;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-right: 0.5rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-image: url(../img/workshop/göz/4.jpg);
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 1.2s ease-in-out;
-  transition: -webkit-filter 1.2s ease-in-out;
-  transition: filter 1.2s ease-in-out;
-  transition: filter 1.2s ease-in-out, -webkit-filter 1.2s ease-in-out;
-}
-
-.workshop-wrap-2 .project-link {
-  height: 49vh;
-}
-
-.workshop-wrap-2 a {
-  text-decoration: none;
-  display: block;
-  color: transparent;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-}
-
-.workshop-wrap-2 a:hover {
-  color: darkgray;
-}
-
-.workshop-wrap-2 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.workshop-wrap-2:hover {
-  -webkit-filter: none;
-          filter: none;
-}
-
-.workshop-wrap-3 {
-  margin: 16vh auto;
-  width: 35vw;
-  min-width: 300px;
-  height: 49vh;
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  background-size: cover;
-  background-image: url(../img/workshop/meydan/1.jpg);
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-  -webkit-transition: -webkit-filter 1.2s ease-in-out;
-  transition: -webkit-filter 1.2s ease-in-out;
-  transition: filter 1.2s ease-in-out;
-  transition: filter 1.2s ease-in-out, -webkit-filter 1.2s ease-in-out;
-}
-
-.workshop-wrap-3 .project-link {
-  height: 49vh;
-}
-
-.workshop-wrap-3 a {
-  text-decoration: none;
-  display: block;
-  color: transparent;
-  -webkit-transition: color 1s;
-  transition: color 1s;
-}
-
-.workshop-wrap-3 a:hover {
-  color: darkgray;
-}
-
-.workshop-wrap-3 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.workshop-wrap-3:hover {
-  -webkit-filter: none;
-          filter: none;
-}
-
 /*PROJECTS*/
 .m402-wrapper {
   display: -webkit-box;
@@ -590,8 +424,6 @@ body:after {
 .m402-wrapper .carousel-indicators li {
   background-color: white;
   border: 1px solid darkgray;
-  margin-right: 8px;
-  margin-left: 8px;
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -611,6 +443,199 @@ body:after {
 
 .m402-wrapper .carousel-control-next:hover, .m402-wrapper .carousel-control-prev:hover {
   opacity: 0.9;
+}
+
+/* WORKSHOP */
+.workshop-wrap-background .workshop-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 {
+  margin: 16vh auto;
+  width: 35vw;
+  min-width: 300px;
+  height: 49vh;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url(../img/workshop/flaneur/14.jpg);
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 1.2s ease-in-out;
+  transition: -webkit-filter 1.2s ease-in-out;
+  transition: filter 1.2s ease-in-out;
+  transition: filter 1.2s ease-in-out, -webkit-filter 1.2s ease-in-out;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 .project-link {
+  height: 49vh;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 a {
+  text-decoration: none;
+  display: block;
+  color: transparent;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 a:hover {
+  color: darkgray;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 .project-text {
+  position: relative;
+  bottom: -50vh;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 {
+  margin: 16vh auto;
+  width: 35vw;
+  min-width: 300px;
+  height: 49vh;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-right: 0.5rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-image: url(../img/workshop/goz/4.jpg);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 1.2s ease-in-out;
+  transition: -webkit-filter 1.2s ease-in-out;
+  transition: filter 1.2s ease-in-out;
+  transition: filter 1.2s ease-in-out, -webkit-filter 1.2s ease-in-out;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 .project-link {
+  height: 49vh;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 a {
+  text-decoration: none;
+  display: block;
+  color: transparent;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 a:hover {
+  color: darkgray;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 .project-text {
+  position: relative;
+  bottom: -50vh;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 {
+  margin: 16vh auto;
+  width: 35vw;
+  min-width: 300px;
+  height: 49vh;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-size: cover;
+  background-image: url(../img/workshop/meydan/1.jpg);
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: -webkit-filter 1.2s ease-in-out;
+  transition: -webkit-filter 1.2s ease-in-out;
+  transition: filter 1.2s ease-in-out;
+  transition: filter 1.2s ease-in-out, -webkit-filter 1.2s ease-in-out;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 .project-link {
+  height: 49vh;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 a {
+  text-decoration: none;
+  display: block;
+  color: transparent;
+  -webkit-transition: color 1s;
+  transition: color 1s;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 a:hover {
+  color: darkgray;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 .project-text {
+  position: relative;
+  bottom: -50vh;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+/*FLANEUR*/
+.flaneur-slider .flaneur-item {
+  height: 70vh !important;
+}
+
+.flaneur-slider .flaneur-item img {
+  height: 70vh !important;
+  -o-object-fit: cover !important;
+     object-fit: cover !important;
+}
+
+.flaneur-slider .flaneur-item-2 img {
+  -o-object-fit: scale-down !important;
+     object-fit: scale-down !important;
+}
+
+/* GÖZ */
+.goz-slider .goz-item {
+  height: 75vh !important;
+}
+
+.goz-slider .goz-item img {
+  height: 75vh !important;
+  -o-object-fit: scale-down !important;
+     object-fit: scale-down !important;
 }
 
 /*ABOUT*/
