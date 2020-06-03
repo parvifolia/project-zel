@@ -13,7 +13,7 @@ function showNewText1(){
     firstText.innerHTML=`
     <div style="text-align: left;">Karma Yapı Projesi<br><br>
     2017-2018 Bahar Dönemi Mezuniyet Projesi<br><br>
-    Etiler / Rumeli hisarüstü / İstanbul</div><br><br>
+    Etiler / Rumeli Hisarüstü / İstanbul</div><br><br>
     `;
     $(".m402-text-relative").fadeIn(300);
 }

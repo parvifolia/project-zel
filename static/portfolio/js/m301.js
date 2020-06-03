@@ -49,7 +49,7 @@ let classWatcher2 = new ClassWatcher(watchingClass2, 'active', workOnClassAdd2,w
 let watchingClass3=carousel[2]
 function showNewText3(){
     firstText.innerHTML=`
-    Atölye, sergi alan, kütüphane, kafeterya gibi alanlarında mevcut olduğu geniş kapsamlı bir tasarım amaçlanmıştır. 
+    Atölye, sergi alanı, kütüphane, kafeterya gibi alanlarında mevcut olduğu, kapsamlı bir tasarım amaçlanmıştır. 
     Bu ihtiyaçlar doğrultusunda proje son halini almıştır.
     `;
     $(".m402-text-relative").fadeIn(300);

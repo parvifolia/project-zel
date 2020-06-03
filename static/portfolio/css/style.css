@@ -57,7 +57,6 @@ body:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Comfortaa', 'arial';
 }
 
 .header-wrap .header-items .logo-wrap .logo #gulsen {
@@ -424,8 +423,8 @@ body:after {
 .m402-wrapper .carousel-indicators li {
   background-color: white;
   border: 1px solid darkgray;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   border-radius: 100%;
 }
 
@@ -472,7 +471,7 @@ body:after {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  background-image: url(../img/workshop/flaneur/14.jpg);
+  background-image: url(../img/workshop/flaneur/4.jpg);
   background-size: cover;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -627,6 +626,11 @@ body:after {
      object-fit: scale-down !important;
 }
 
+.flaneur-slider .flaneur-item-16 img {
+  -o-object-position: top;
+     object-position: top;
+}
+
 /* GÖZ */
 .goz-slider .goz-item {
   height: 75vh !important;
@@ -634,6 +638,17 @@ body:after {
 
 .goz-slider .goz-item img {
   height: 75vh !important;
+  -o-object-fit: scale-down !important;
+     object-fit: scale-down !important;
+}
+
+/* MEYDAN */
+.meydan-slider .meydan-item {
+  height: 70vh !important;
+}
+
+.meydan-slider .meydan-item img {
+  height: 70vh !important;
   -o-object-fit: scale-down !important;
      object-fit: scale-down !important;
 }

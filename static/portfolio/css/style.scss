@@ -41,8 +41,6 @@ body:after{
             .logo {
                 display: flex;
                 align-items: center;
-                font-family: 'Comfortaa', 'arial';
-
                 #gulsen {
                     text-decoration: none;
                     color: $firstcolor;
@@ -267,8 +265,8 @@ body:after{
     .carousel-indicators li{
         background-color: rgb(255, 255, 255);
         border: 1px solid darkgray;
-        width: 10px;
-        height: 10px;
+        width: 6px;
+        height: 6px;
         border-radius: 100%;
         &.active{
             background: darkgray;
@@ -297,7 +295,7 @@ body:after{
             @include wrapdefault();
             margin-right:0.5rem;
             flex: 1;
-            background-image:url(../img/workshop/flaneur/14.jpg);
+            background-image:url(../img/workshop/flaneur/4.jpg);
             background-size: cover;
             filter: grayscale(100%);
             transition: filter 1.2s ease-in-out;
@@ -344,6 +342,11 @@ body:after{
             object-fit: scale-down!important;
         }
     }
+    .flaneur-item-16{
+        img{
+            object-position: top;
+        }
+    }
 }
 
 /* GÖZ */
@@ -357,6 +360,18 @@ body:after{
     }
 
 }
+
+/* MEYDAN */
+.meydan-slider{
+    .meydan-item{
+        height: 70vh!important;
+        img{
+            height: 70vh!important;
+            object-fit: scale-down!important;
+        }
+    }
+}
+
 
 /*ABOUT*/
 .about-wrap {
