@@ -10,7 +10,7 @@ $('.carousel').carousel('pause');
 //first text 
 let watchingClass1=carousel[0];
 function showNewText1(){
-    firstText.innerHTML=`<div style="text-align: left;">Toplu Konut Projesi<br><br>
+    firstText.innerHTML=`<div class="m402-text-relative-inside" style="text-align: left;">Toplu Konut Projesi<br><br>
     2016-2017 Bahar Dönem<br><br>
     Sarıyer/ İstanbul
     </div>

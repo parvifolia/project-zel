@@ -1,6 +1,6 @@
 import ClassWatcher from './modules/ClassWatcher.js';
 
-const firstText=document.querySelector(".m402-text-relative");
+const firstText=document.querySelector(".meydan-text-relative");
 const carousel=document.querySelectorAll(".carousel-item");
 
 $('.carousel').carousel('pause');
@@ -11,16 +11,16 @@ $('.carousel').carousel('pause');
 let watchingClass1=carousel[0];
 function showNewText1(){
     firstText.innerHTML=`
-    <div style="text-align: left;">
+    <div class="meydan-text-relative-inside" style="text-align: left;">
     Sosyal Sorumluluk Projesi<br><br>
     2018<br><br>
     Kocaseyit / Havran / Balıkesir
     </div>
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".meydan-text-relative").fadeIn(300);
 }
 function workOnClassAdd1() {
-    $(".m402-text-relative").fadeOut(300,showNewText1)
+    $(".meydan-text-relative").fadeOut(300,showNewText1)
 }
 function workOnClassRemoval() {
 }
@@ -36,10 +36,10 @@ function showNewText2(){
     halkın ihtiyaçları öz önünde bulundurularak sağlanabilecek olanaklar ve yeni düzenlemeler düşünülerek 
     proje başlatıldı. 
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".meydan-text-relative").fadeIn(300);
 }
 function workOnClassAdd2() {
-    $(".m402-text-relative").fadeOut(300,showNewText2)
+    $(".meydan-text-relative").fadeOut(300,showNewText2)
 }
 let classWatcher2 = new ClassWatcher(watchingClass2, 'active', workOnClassAdd2,workOnClassRemoval)
 
@@ -53,10 +53,10 @@ function showNewText3(){
     manzarasına yönlendirmek amaçlandı. Bu alanı kullanacakların,  köy meydanından başlayarak önce kerpiç 
     eve oradan da kaz dağları manzarasına yönlendirecek yollar düzenlendi.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".meydan-text-relative").fadeIn(300);
 }
 function workOnClassAdd3() {
-    $(".m402-text-relative").fadeOut(300,showNewText3)
+    $(".meydan-text-relative").fadeOut(300,showNewText3)
 }
 let classWatcher3 = new ClassWatcher(watchingClass3, 'active', workOnClassAdd3,workOnClassRemoval)
 
@@ -69,10 +69,10 @@ function showNewText4(){
     İnsanların bu alanda geçirecekleri vakti daha da keyifli hale getirecek oturma alanları ve satış birimi kuruldu. 
     Terastaki açık hava sineması ile tasarım bütünlüğü sağlandı. 
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".meydan-text-relative").fadeIn(300);
 }
 function workOnClassAdd4() {
-    $(".m402-text-relative").fadeOut(300,showNewText4)
+    $(".meydan-text-relative").fadeOut(300,showNewText4)
 }
 let classWatcher4 = new ClassWatcher(watchingClass4, 'active', workOnClassAdd4,workOnClassRemoval)
 
@@ -84,10 +84,10 @@ function showNewText5(){
     rahatlıkla kullanabileceği su birimleri, beton ve ahşaptan kolaylıkla Elde edilebilecek oturma birimleri tasarlandı. 
     Ayrıca yol zemin kaplaması olarak doğal kesme taş  kullanımı ön görülmüştür. 
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".meydan-text-relative").fadeIn(300);
 }
 function workOnClassAdd5() {
-    $(".m402-text-relative").fadeOut(300,showNewText5)
+    $(".meydan-text-relative").fadeOut(300,showNewText5)
 }
 let classWatcher5 = new ClassWatcher(watchingClass5, 'active', workOnClassAdd5,workOnClassRemoval)
 
@@ -99,9 +99,9 @@ function showNewText6(){
     Doğa ile uyumlu, geri dönüştürülebilir, doğaya ve canlılara zarar vermeyen, 
     sürdürülebilir malzemelerin kullanılmı tercih edilmiştir. 
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".meydan-text-relative").fadeIn(300);
 }
 function workOnClassAdd6() {
-    $(".m402-text-relative").fadeOut(300,showNewText6)
+    $(".meydan-text-relative").fadeOut(300,showNewText6)
 }
 let classWatcher6 = new ClassWatcher(watchingClass6, 'active', workOnClassAdd6,workOnClassRemoval)

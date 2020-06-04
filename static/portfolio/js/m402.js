@@ -11,7 +11,7 @@ $('.carousel').carousel('pause');
 let watchingClass1=carousel[0];
 function showNewText1(){
     firstText.innerHTML=`
-    <div style="text-align: left;">Karma Yapı Projesi<br><br>
+    <div class="m402-text-relative-inside" style="text-align: left;">Karma Yapı Projesi<br><br>
     2017-2018 Bahar Dönemi Mezuniyet Projesi<br><br>
     Etiler / Rumeli Hisarüstü / İstanbul</div><br><br>
     `;

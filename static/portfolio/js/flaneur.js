@@ -1,6 +1,6 @@
 import ClassWatcher from './modules/ClassWatcher.js';
 
-const firstText=document.querySelector(".m402-text-relative");
+const firstText=document.querySelector(".flaneur-text-relative");
 const carousel=document.querySelectorAll(".carousel-item");
 
 $('.carousel').carousel('pause');
@@ -11,16 +11,16 @@ $('.carousel').carousel('pause');
 let watchingClass1=carousel[0];
 function showNewText1(){
     firstText.innerHTML=`
-    <div style="text-align: left;">
+    <div class="flaneur-text-relative-inside" style="text-align: left;">
     Uluslararası Mimarlık Öğrencileri Buluşması<br><br>
     2018<br><br>
     Adana
     </div>
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd1() {
-    $(".m402-text-relative").fadeOut(300,showNewText1)
+    $(".flaneur-text-relative").fadeOut(300,showNewText1)
 }
 function workOnClassRemoval() {
 }
@@ -35,10 +35,10 @@ function showNewText2(){
     UMÖB 17.5 Adana'da gerçekleştirilen Flaneur atölyesi, 10 katılımcı ve 3 yürütücü ile 2 Şubat 2018 tarihinde tamamlandı. 
     Toplamda 6 çalışma günü süresi içerisinde gerçekleşti.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd2() {
-    $(".m402-text-relative").fadeOut(300,showNewText2)
+    $(".flaneur-text-relative").fadeOut(300,showNewText2)
 }
 let classWatcher2 = new ClassWatcher(watchingClass2, 'active', workOnClassAdd2,workOnClassRemoval)
 
@@ -54,10 +54,10 @@ function showNewText3(){
     gene aynı manevra kabiliyetinde olabilir miydik? Peki yaşam alanını çeşitli sebeplerle bırakmış bir kimse, 
     kent ile hangi düzeyde iletişim kurar?
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd3() {
-    $(".m402-text-relative").fadeOut(300,showNewText3)
+    $(".flaneur-text-relative").fadeOut(300,showNewText3)
 }
 let classWatcher3 = new ClassWatcher(watchingClass3, 'active', workOnClassAdd3,workOnClassRemoval)
 
@@ -73,10 +73,10 @@ function showNewText4(){
     günün üretimini gerçekleştiren katılımcılar "hayatta kalacak."
     
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd4() {
-    $(".m402-text-relative").fadeOut(300,showNewText4)
+    $(".flaneur-text-relative").fadeOut(300,showNewText4)
 }
 let classWatcher4 = new ClassWatcher(watchingClass4, 'active', workOnClassAdd4,workOnClassRemoval)
 
@@ -90,10 +90,10 @@ function showNewText5(){
     ardına gelmektedir. Böylece mekanın önemi azalmakta ve hareketliliğin kendisi önem kazanmaktadır.
     
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd5() {
-    $(".m402-text-relative").fadeOut(300,showNewText5)
+    $(".flaneur-text-relative").fadeOut(300,showNewText5)
 }
 let classWatcher5 = new ClassWatcher(watchingClass5, 'active', workOnClassAdd5,workOnClassRemoval)
 
@@ -107,10 +107,10 @@ function showNewText6(){
     Eğer bir Flaneur ait olduğu mekandan koparılırsa ne tepki verir? Alışık olduğu araçlardan uzakta kalırsa nasıl 
     hayatta kalır? 
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd6() {
-    $(".m402-text-relative").fadeOut(300,showNewText6)
+    $(".flaneur-text-relative").fadeOut(300,showNewText6)
 }
 let classWatcher6 = new ClassWatcher(watchingClass6, 'active', workOnClassAdd6,workOnClassRemoval)
 
@@ -123,10 +123,10 @@ function showNewText7(){
     olduğu bu habitat karşısında ne tepki vereceği önemlidir; çünkü flaneur konforunu tekrar elde etmeye 
     çalışacak, bir noktada gezginlik ile üretim dengesini kurması gerecektir.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd7() {
-    $(".m402-text-relative").fadeOut(300,showNewText7)
+    $(".flaneur-text-relative").fadeOut(300,showNewText7)
 }
 let classWatcher7 = new ClassWatcher(watchingClass7, 'active', workOnClassAdd7,workOnClassRemoval)
 
@@ -139,10 +139,10 @@ function showNewText8(){
 
     Kurgu kenti anlamaya çalışıp, ona üretmek üzerine kuruludur.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd8() {
-    $(".m402-text-relative").fadeOut(300,showNewText8)
+    $(".flaneur-text-relative").fadeOut(300,showNewText8)
 }
 let classWatcher8 = new ClassWatcher(watchingClass8, 'active', workOnClassAdd8,workOnClassRemoval)
 
@@ -153,10 +153,10 @@ function showNewText9(){
     firstText.innerHTML=`
     Çatı örtüsü olarak Adana'nın sıcak iklimi göz önüne alınmış ve amerikan bezlerinden bir hafif örtü tasarlanmıştır.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd9() {
-    $(".m402-text-relative").fadeOut(300,showNewText9)
+    $(".flaneur-text-relative").fadeOut(300,showNewText9)
 }
 let classWatcher9 = new ClassWatcher(watchingClass9, 'active', workOnClassAdd9,workOnClassRemoval)
 
@@ -167,10 +167,10 @@ function showNewText10(){
     Döşemenin taşınabilirliği için yaklaşık 35cm aralıklarla 5x10 kirişler çakılmış, döşeme olarak kullanılan osb nin 
     mukavemetini arttırmak içinde 2 adet üst üste konulmuştur.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd10() {
-    $(".m402-text-relative").fadeOut(300,showNewText10)
+    $(".flaneur-text-relative").fadeOut(300,showNewText10)
 }
 let classWatcher10 = new ClassWatcher(watchingClass10, 'active', workOnClassAdd10,workOnClassRemoval)
 
@@ -181,10 +181,10 @@ function showNewText11(){
     firstText.innerHTML=`
     Pavyonun salınımını engellemek için zemin katta çaprazlamalar vardır. Rijitliği önemli ölçüde arttırmıştır.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd11() {
-    $(".m402-text-relative").fadeOut(300,showNewText11)
+    $(".flaneur-text-relative").fadeOut(300,showNewText11)
 }
 let classWatcher11 = new ClassWatcher(watchingClass11, 'active', workOnClassAdd11,workOnClassRemoval)
 
@@ -195,10 +195,10 @@ function showNewText12(){
     Ahşap boyutlarından dolayı yekpare dikey ve yatay taşıyıcılar elde edilemediği için, çeşitli profil çözümleri 
     yapılmıştır. Birbirlerine geçmeli şeklinde üretilen bu şablon sayesinde birleşim noktaları sağlamlaştırılmıştır.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".flaneur-text-relative").fadeIn(300);
 }
 function workOnClassAdd12() {
-    $(".m402-text-relative").fadeOut(300,showNewText12)
+    $(".flaneur-text-relative").fadeOut(300,showNewText12)
 }
 let classWatcher12 = new ClassWatcher(watchingClass12, 'active', workOnClassAdd12,workOnClassRemoval)
 

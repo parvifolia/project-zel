@@ -1,6 +1,6 @@
 import ClassWatcher from './modules/ClassWatcher.js';
 
-const firstText=document.querySelector(".m402-text-relative");
+const firstText=document.querySelector(".goz-text-relative");
 const carousel=document.querySelectorAll(".carousel-item");
 
 $('.carousel').carousel('pause');
@@ -11,16 +11,16 @@ $('.carousel').carousel('pause');
 let watchingClass1=carousel[0];
 function showNewText1(){
     firstText.innerHTML=`
-    <div style="text-align: left;">
+    <div class="goz-text-relative-inside" style="text-align: left;">
     Betonart Mimarlık Yaz Okulu<br><br>
     2018<br><br>
     Kayseri
     </div>
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".goz-text-relative").fadeIn(300);
 }
 function workOnClassAdd1() {
-    $(".m402-text-relative").fadeOut(300,showNewText1)
+    $(".goz-text-relative").fadeOut(300,showNewText1)
 }
 function workOnClassRemoval() {
 }
@@ -37,10 +37,10 @@ function showNewText2(){
     basit ve ölçekli bir katılımını hedefliyordu. GÖZ iIe ucu açık, gündeIik deneyimi önceleyen, özellikle betonun 
     ilksel hâllerine yönelmiş bir tavır kurmaya çalıştık.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".goz-text-relative").fadeIn(300);
 }
 function workOnClassAdd2() {
-    $(".m402-text-relative").fadeOut(300,showNewText2)
+    $(".goz-text-relative").fadeOut(300,showNewText2)
 }
 let classWatcher2 = new ClassWatcher(watchingClass2, 'active', workOnClassAdd2,workOnClassRemoval)
 
@@ -55,10 +55,10 @@ function showNewText3(){
     gibi temel hedefi betonun imkânlarını açmak, yeni kullanım olanaklarını araştırmak olan bir deney alanı içinde, 
     özellikle ilkel betonu pürüzleri ile başbaşa bırakmayı deneyen bir tema ile hareket ettik.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".goz-text-relative").fadeIn(300);
 }
 function workOnClassAdd3() {
-    $(".m402-text-relative").fadeOut(300,showNewText3)
+    $(".goz-text-relative").fadeOut(300,showNewText3)
 }
 let classWatcher3 = new ClassWatcher(watchingClass3, 'active', workOnClassAdd3,workOnClassRemoval)
 
@@ -70,10 +70,10 @@ function showNewText4(){
     Sonrasında, bulunduğu devreye eklemlenen çabası ile yere yaklaşan bir geçit kurmaya çalışırken konvansiyonel 
     betonun üretim hatalarını, ahşap kalıp izlerini, hareleri ve çapakları yakından görmeyi istedik.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".goz-text-relative").fadeIn(300);
 }
 function workOnClassAdd4() {
-    $(".m402-text-relative").fadeOut(300,showNewText4)
+    $(".goz-text-relative").fadeOut(300,showNewText4)
 }
 let classWatcher4 = new ClassWatcher(watchingClass4, 'active', workOnClassAdd4,workOnClassRemoval)
 
@@ -86,10 +86,10 @@ function showNewText5(){
     Çalışmanın  ilk  günlerinde  seçilmiş  alanda hemen farkına vardığımız, çimler üzerindeki bu patikanın yere 
     dâhil  edilmesi  dıüşüncesiyle  oluşan bir geçiş mekânı olarak kuruldu. 
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".goz-text-relative").fadeIn(300);
 }
 function workOnClassAdd5() {
-    $(".m402-text-relative").fadeOut(300,showNewText5)
+    $(".goz-text-relative").fadeOut(300,showNewText5)
 }
 let classWatcher5 = new ClassWatcher(watchingClass5, 'active', workOnClassAdd5,workOnClassRemoval)
 
@@ -104,10 +104,10 @@ function showNewText6(){
     çalıştık. Mekârısallaşan bir dizi eşik ve kenar üreterek öğrenci köyü girişinde farklı vistalar, kapanışlar ve 
     perspektifler  kurarak  özellikle   gün   boyu   bostanda çalışanlar için bir dinlenme alanı tarif eden bir durak. 
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".goz-text-relative").fadeIn(300);
 }
 function workOnClassAdd6() {
-    $(".m402-text-relative").fadeOut(300,showNewText6)
+    $(".goz-text-relative").fadeOut(300,showNewText6)
 }
 let classWatcher6 = new ClassWatcher(watchingClass6, 'active', workOnClassAdd6,workOnClassRemoval)
 
@@ -118,10 +118,10 @@ function showNewText7(){
     Gün içinde hareket eden gölgelerin tarif ettiği alanın zeminde  üretilen   yırtıkla buluştuğu çökertilmiş 
     iç zeminde kısa bir an için bile olsa zaman duygusunu dönüştürmeyi deniyor GÖZ.
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".goz-text-relative").fadeIn(300);
 }
 function workOnClassAdd7() {
-    $(".m402-text-relative").fadeOut(300,showNewText7)
+    $(".goz-text-relative").fadeOut(300,showNewText7)
 }
 let classWatcher7 = new ClassWatcher(watchingClass7, 'active', workOnClassAdd7,workOnClassRemoval)
 
@@ -133,10 +133,10 @@ function showNewText8(){
     yer arasında durmanın tüm duygusunun beton duvarlar arasına sıkıştırıldığı, ardışık bir iç/dış/ara kurmayı 
     deniyor bir anlamda. 
     `;
-    $(".m402-text-relative").fadeIn(300);
+    $(".goz-text-relative").fadeIn(300);
 }
 function workOnClassAdd8() {
-    $(".m402-text-relative").fadeOut(300,showNewText8)
+    $(".goz-text-relative").fadeOut(300,showNewText8)
 }
 let classWatcher8 = new ClassWatcher(watchingClass8, 'active', workOnClassAdd8,workOnClassRemoval)
 

@@ -10,7 +10,7 @@ $('.carousel').carousel('pause');
 //first text 
 let watchingClass1=carousel[0];
 function showNewText1(){
-    firstText.innerHTML=`<div style="text-align: left;">Endüstri Müzesi ve Kültür-Sanat Merkezi<br><br>
+    firstText.innerHTML=`<div class="m402-text-relative-inside" style="text-align: left;">Endüstri Müzesi ve Kültür-Sanat Merkezi<br><br>
     2017-2018 Güz Dönemi<br><br>
     Havran/ Balıkesir
     </div>
