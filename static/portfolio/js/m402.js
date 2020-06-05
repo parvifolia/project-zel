@@ -5,6 +5,8 @@ const carousel=document.querySelectorAll(".carousel-item");
 
 $('.carousel').carousel('pause');
 
+$("input:text:visible:first").focus();
+
 // watch class changes with mutation observer
 
 //first text 

@@ -113,6 +113,9 @@ body:after{
         display: block!important;
         .logo-wrap{
             justify-content: center!important;
+            #gulsen,#aktas{
+                font-size: 1.2rem!important;
+            }
         }
         .nav-wrap{
             margin: 3vh 0 2vh 0!important;
@@ -124,7 +127,7 @@ body:after{
     }
 }
 
-/* PORTFOLIO */
+/* HOME */
 @mixin wrapdefault () {
     margin: 16vh auto;
     width: 35vw;
@@ -221,9 +224,6 @@ body:after{
                 position: relative!important;
                 top: 36vh!important;
             }
-            a{
-                color: $firstcolor!important;
-            }
             .project-link {
                 height: 40vh!important;
             }
@@ -253,13 +253,12 @@ body:after{
     .m402-content{
         flex: 3;
         .m402-title{
-            padding: 8rem 2rem 2rem 5rem;
+            padding: 20vh 13vh 10vh;
             font-size: $font-title1;
             text-align: left;
-
         }
         .m402-text{
-            padding: 0 2rem 0 5rem;
+            padding: 0 8vh 0 13vh;
             font-size: $font-text;
             text-align: right;
         }
@@ -284,7 +283,7 @@ body:after{
         }
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1038px) {
     .m402-wrapper{
         flex-direction: column;
         width: 100%;
@@ -304,11 +303,7 @@ body:after{
         }
     }
 }
-@media screen and (min-width:1900px){
-    .m402-title{
-        padding: 18rem 2rem 2rem 5rem!important;
-    }
-}
+
 
 /* WORKSHOP */
 .workshop-wrap-background{
@@ -357,18 +352,20 @@ body:after{
         }
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1038px) {
     .workshop-wrap{
         width: 100%!important;
     }
     .workshop-wrap-1,.workshop-wrap-2,.workshop-wrap-3{
         margin:0!important;
+        min-width: 400px!important;
         height: 27vh!important;
         .project-text{
             display: none;
         }
     }
 }
+
 
 /*FLANEUR*/
 .flaneur-wrapper{
@@ -419,19 +416,18 @@ body:after{
     .flaneur-content{
         flex: 3;
         .flaneur-title{
-            padding: 8rem 2rem 2rem 5rem;
+            padding: 20vh 13vh 10vh;
             font-size: $font-title1;
             text-align: left;
-
         }
         .flaneur-text{
-            padding: 0 2rem 0 5rem;
+            padding: 0 8vh 0 13vh;
             font-size: $font-text;
             text-align: right;
         }
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1038px) {
     .flaneur-wrapper{
         width: 100%;
         flex-direction: column;
@@ -474,11 +470,7 @@ body:after{
     }
     
 }
-@media screen and (min-width:1900px){
-    .flaneur-title{
-        padding: 18rem 2rem 2rem 5rem!important;
-    }
-}
+
 
 
 /* GÖZ */
@@ -520,19 +512,18 @@ body:after{
     .goz-content{
         flex: 3;
         .goz-title{
-            padding: 8rem 2rem 2rem 5rem;
+            padding: 20vh 13vh 10vh;
             font-size: $font-title1;
             text-align: left;
-
         }
         .goz-text{
-            padding: 0 2rem 0 5rem;
+            padding: 0 8vh 0 13vh;
             font-size: $font-text;
             text-align: right;
         }
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1038px) {
     .goz-wrapper{
         flex-direction: column;
         .goz-slider{
@@ -568,11 +559,7 @@ body:after{
     }
     
 }
-@media screen and (min-width:1900px){
-    .goz-title{
-        padding: 18rem 2rem 2rem 5rem!important;
-    }
-}
+
 
 
 /* MEYDAN */
@@ -626,7 +613,7 @@ body:after{
         }
     }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:1038px) {
     .meydan-wrapper{
         flex-direction: column;
         width: 100%;
@@ -662,11 +649,7 @@ body:after{
     }
     
 }
-@media screen and (min-width:1900px){
-    .meydan-title{
-        padding: 18rem 2rem 2rem 5rem!important;
-    }
-}
+
 
 /*ABOUT*/
 .about-wrap {
@@ -693,8 +676,12 @@ body:after{
     }
 }
 @media screen and (max-width:768px) {
+    .about-img{
+        margin-top: 2vh;
+        height: 50vh!important;
+    }
     .about-text-content {
-        margin: 15vh 0 10vh 0;
+        margin: 15vh 0 10vh 0!important;
         padding: 0!important;
     }
 }
@@ -723,14 +710,9 @@ body:after{
     .draws{
         display: block!important;
         .draw{
-            margin: 0!important;
+            margin: 0.5!important;
             padding: 0.5rem!important;
             max-width: 100%!important;
-            border: none!important;
-            border-bottom: 1px solid darkgray!important;
-            &:last-child{
-                border-bottom: none!important;
-            }
         }
     }
 }
@@ -772,7 +754,7 @@ body:after{
         .cv-item-img {
             height: 14vh;
             background-size: 7vh;
-            min-width: 7vw;
+            min-width: 15vh;
             background-repeat: no-repeat;
             background-position: left;
             pointer-events: none;
@@ -902,17 +884,15 @@ body:after{
         width: 100%;
     }
     .cv-item-img {
-        min-width: 15vw!important;
-        height: 10vh!important;
-        margin:0 5%!important;
+        min-width: 13vw!important;
+        background-size: 5vh!important;
+        height: 9vh!important;
+        margin:0 4%!important;
     }
     .cv-item-title{
-        text-align: center!important;
         min-width: auto!important;
     }
     .cv-item-text {
-        display: flex!important;
-        justify-content: center!important;
         line-height: 1.2rem!important;
         margin:0 5%!important;
         .projeler-intext {
@@ -925,9 +905,6 @@ body:after{
     .cv-item-wrap {
         background-position: cover!important;
         background-size: 100vw!important;
-    }
-    .cv-item-div1{
-        justify-content: center!important;
     }
     .cv-item-wrap-3 {
         background-position-y: 20%!important;
@@ -942,6 +919,7 @@ body:after{
         background-position-y: 40%!important;
     }
 }
+
 
 /*FOOTER*/
 .footer {
@@ -1007,6 +985,7 @@ body:after{
     .footer{
         padding-bottom: 3vh!important;
         .footer-icons{
+            width: 205px!important;
             margin:auto!important;
         }
         .footer-mail{
@@ -1017,7 +996,7 @@ body:after{
         }
         .parvifolia{
             margin: auto!important;
-            font-size: 10px!important;
+            font-size: 9px!important;
             text-align: center!important;
         }
     }
@@ -1025,22 +1004,15 @@ body:after{
 }
 
 /* 404 */
-.page404 {
-    .h1-404 {
-        font-size:100px;
-        position: relative;
-        bottom: 100px;
-    }
-    
-    .text-404 {
-        position: relative;
-        bottom: 100px;
-    }
-    
-    .text2-404 {
-        padding-top: 50px;
-        position: relative;
-        bottom: 100px;
+.cv{
+    width: 90%;
+    margin: auto;
+    .page404{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 5vh auto;
+
     }
 }
 
