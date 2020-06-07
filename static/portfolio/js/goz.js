@@ -7,136 +7,122 @@ $('.carousel').carousel('pause');
 
 // watch class changes with mutation observer
 
-//first text 
-let watchingClass1=carousel[0];
-function showNewText1(){
-    firstText.innerHTML=`
-    <div class="goz-text-relative-inside" style="text-align: left;">
-    Betonart Mimarlık Yaz Okulu<br><br>
-    2018<br><br>
-    Kayseri
-    </div>
-    `;
-    $(".goz-text-relative").fadeIn(300);
+function showNewText(text){
+    firstText.innerHTML=`${text}`;
+    gsap.to(".goz-text-relative",
+        {
+        duration:0.3,
+        opacity:1
+    });
 }
-function workOnClassAdd1() {
-    $(".goz-text-relative").fadeOut(300,showNewText1)
-}
-function workOnClassRemoval() {
-}
-let classWatcher1 = new ClassWatcher(watchingClass1, 'active', workOnClassAdd1,workOnClassRemoval)
+function workOnClassRemoved(){};
 
+carousel.forEach((e, i) => {
+    if (i<4){
+    let list = [ workOnAddClass1,workOnAddClass2,workOnAddClass3,workOnAddClass4,
+                workOnAddClass5,workOnAddClass6,workOnAddClass7,workOnAddClass8]
+    new ClassWatcher(e, 'active', list[i],workOnClassRemoved)
+    }
+})
 
-
-//second text
-let watchingClass2=carousel[1];
-function showNewText2(){
-    firstText.innerHTML=`
-    "Beton Olmak" temalı Betonart Mimarlık Yaz Okulu’ nda GÖZ başlıklı çalışma, beton ile kurulan ilişkide ışığı 
-    sıkıştırmayı ve beton ile yakın ilişkide malzemenin çıplaklığına tanıklığı ve bu deneyimin çevreye öğrenci köyüne 
-    basit ve ölçekli bir katılımını hedefliyordu. GÖZ iIe ucu açık, gündeIik deneyimi önceleyen, özellikle betonun 
-    ilksel hâllerine yönelmiş bir tavır kurmaya çalıştık.
-    `;
-    $(".goz-text-relative").fadeIn(300);
-}
-function workOnClassAdd2() {
-    $(".goz-text-relative").fadeOut(300,showNewText2)
-}
-let classWatcher2 = new ClassWatcher(watchingClass2, 'active', workOnClassAdd2,workOnClassRemoval)
-
-
-
-//third text
-let watchingClass3=carousel[2]
-function showNewText3(){
-    firstText.innerHTML=`
-    Işığı sıkıştıran, beton ile karşılaşmayı bir kol mesafesinde tutmaya çalışan, çevreden kontrollü bir biçimde 
-    kopan bir geçiş tasarladık. Süreç içinde ilk eskizlerden, işin son hâline kadar Betonart Mimarlık Yaz Okulu 
-    gibi temel hedefi betonun imkânlarını açmak, yeni kullanım olanaklarını araştırmak olan bir deney alanı içinde, 
-    özellikle ilkel betonu pürüzleri ile başbaşa bırakmayı deneyen bir tema ile hareket ettik.
-    `;
-    $(".goz-text-relative").fadeIn(300);
-}
-function workOnClassAdd3() {
-    $(".goz-text-relative").fadeOut(300,showNewText3)
-}
-let classWatcher3 = new ClassWatcher(watchingClass3, 'active', workOnClassAdd3,workOnClassRemoval)
-
-
-//fourth text
-let watchingClass4=carousel[3]
-function showNewText4(){
-    firstText.innerHTML=`
-    Sonrasında, bulunduğu devreye eklemlenen çabası ile yere yaklaşan bir geçit kurmaya çalışırken konvansiyonel 
-    betonun üretim hatalarını, ahşap kalıp izlerini, hareleri ve çapakları yakından görmeyi istedik.
-    `;
-    $(".goz-text-relative").fadeIn(300);
-}
-function workOnClassAdd4() {
-    $(".goz-text-relative").fadeOut(300,showNewText4)
-}
-let classWatcher4 = new ClassWatcher(watchingClass4, 'active', workOnClassAdd4,workOnClassRemoval)
-
-//fifth text
-let watchingClass5=carousel[4]
-function showNewText5(){
-    firstText.innerHTML=`
-    Son haliyle GÖZ, öğrenci köyünde bostanların  hemen yamacında yurtlardan birine yönelmiş ince bir patika izine 
-    sahip çıkan, ardışık eşiklerden kurulu, ölçülü bir şekilde içe kapanan  bir  geçit  olarak  ortaya çıktı.  
-    Çalışmanın  ilk  günlerinde  seçilmiş  alanda hemen farkına vardığımız, çimler üzerindeki bu patikanın yere 
-    dâhil  edilmesi  dıüşüncesiyle  oluşan bir geçiş mekânı olarak kuruldu. 
-    `;
-    $(".goz-text-relative").fadeIn(300);
-}
-function workOnClassAdd5() {
-    $(".goz-text-relative").fadeOut(300,showNewText5)
-}
-let classWatcher5 = new ClassWatcher(watchingClass5, 'active', workOnClassAdd5,workOnClassRemoval)
-
-
-//sixth text
-let watchingClass6=carousel[5]
-function showNewText6(){
-    firstText.innerHTML=`
-    Hem yere, hem çevreye dair ölçekli bir mekân kurmayı umut eden, beton  ile  karşılaşma  anlarını  sıkıştırmayı  
-    düşünen bir kestirme. Diğer yanda aslında ahaliyi geçerken durmaya davet eden bir pasaj,  gözün  taradığı  
-    ardışık eşikleri bir kapanışlar ve açılışlar alanı olarak kuran bir kesişimler durağı, bir aralık olmasına 
-    çalıştık. Mekârısallaşan bir dizi eşik ve kenar üreterek öğrenci köyü girişinde farklı vistalar, kapanışlar ve 
-    perspektifler  kurarak  özellikle   gün   boyu   bostanda çalışanlar için bir dinlenme alanı tarif eden bir durak. 
-    `;
-    $(".goz-text-relative").fadeIn(300);
-}
-function workOnClassAdd6() {
-    $(".goz-text-relative").fadeOut(300,showNewText6)
-}
-let classWatcher6 = new ClassWatcher(watchingClass6, 'active', workOnClassAdd6,workOnClassRemoval)
-
-//seventh text
-let watchingClass7=carousel[6]
-function showNewText7(){
-    firstText.innerHTML=`
-    Gün içinde hareket eden gölgelerin tarif ettiği alanın zeminde  üretilen   yırtıkla buluştuğu çökertilmiş 
-    iç zeminde kısa bir an için bile olsa zaman duygusunu dönüştürmeyi deniyor GÖZ.
-    `;
-    $(".goz-text-relative").fadeIn(300);
-}
-function workOnClassAdd7() {
-    $(".goz-text-relative").fadeOut(300,showNewText7)
-}
-let classWatcher7 = new ClassWatcher(watchingClass7, 'active', workOnClassAdd7,workOnClassRemoval)
-
-//eighth text
-let watchingClass8=carousel[7]
-function showNewText8(){
-    firstText.innerHTML=`
-    Sırtını beton duvarlara vererek oturan kişinin, betonun serinliğine, ışığın ısısına dokunduğu, gök ile 
-    yer arasında durmanın tüm duygusunun beton duvarlar arasına sıkıştırıldığı, ardışık bir iç/dış/ara kurmayı 
-    deniyor bir anlamda. 
-    `;
-    $(".goz-text-relative").fadeIn(300);
-}
-function workOnClassAdd8() {
-    $(".goz-text-relative").fadeOut(300,showNewText8)
-}
-let classWatcher8 = new ClassWatcher(watchingClass8, 'active', workOnClassAdd8,workOnClassRemoval)
-
+function workOnAddClass1(){
+    let text = `
+        <div class="goz-text-relative-inside" style="text-align: left;">
+        Betonart Mimarlık Yaz Okulu<br><br>
+        2018<br><br>
+        Kayseri
+        </div>
+        `
+    gsap.to(".goz-text-relative",{
+        duration:0.3,
+        opacity:0,
+        onComplete: showNewText,
+        onCompleteParams:[text]
+})};
+function workOnAddClass2 (){
+    let text = `
+        "Beton Olmak" temalı Betonart Mimarlık Yaz Okulu’ nda GÖZ başlıklı çalışma, beton ile kurulan ilişkide ışığı 
+        sıkıştırmayı ve beton ile yakın ilişkide malzemenin çıplaklığına tanıklığı ve bu deneyimin çevreye öğrenci köyüne 
+        basit ve ölçekli bir katılımını hedefliyordu. GÖZ iIe ucu açık, gündeIik deneyimi önceleyen, özellikle betonun 
+        ilksel hâllerine yönelmiş bir tavır kurmaya çalıştık.
+        `
+    gsap.to(".goz-text-relative",{
+        duration:0.3,
+        opacity:0,
+        onComplete: showNewText,
+        onCompleteParams:[text]
+})};
+function workOnAddClass3 (){
+    let text = `
+        Işığı sıkıştıran, beton ile karşılaşmayı bir kol mesafesinde tutmaya çalışan, çevreden kontrollü bir biçimde 
+        kopan bir geçiş tasarladık. Süreç içinde ilk eskizlerden, işin son hâline kadar Betonart Mimarlık Yaz Okulu 
+        gibi temel hedefi betonun imkânlarını açmak, yeni kullanım olanaklarını araştırmak olan bir deney alanı içinde, 
+        özellikle ilkel betonu pürüzleri ile başbaşa bırakmayı deneyen bir tema ile hareket ettik.
+    `
+    gsap.to(".goz-text-relative",{
+        duration:0.3,
+        opacity:0,
+        onComplete: showNewText,
+        onCompleteParams:[text]
+})};
+function workOnAddClass4 (){
+    let text = `
+        Sonrasında, bulunduğu devreye eklemlenen çabası ile yere yaklaşan bir geçit kurmaya çalışırken konvansiyonel 
+        betonun üretim hatalarını, ahşap kalıp izlerini, hareleri ve çapakları yakından görmeyi istedik.
+    `
+    gsap.to(".goz-text-relative",{
+        duration:0.3,
+        opacity:0,
+        onComplete: showNewText,
+        onCompleteParams:[text]
+})};
+function workOnAddClass5 (){
+    let text = `
+        Son haliyle GÖZ, öğrenci köyünde bostanların  hemen yamacında yurtlardan birine yönelmiş ince bir patika izine 
+        sahip çıkan, ardışık eşiklerden kurulu, ölçülü bir şekilde içe kapanan  bir  geçit  olarak  ortaya çıktı.  
+        Çalışmanın  ilk  günlerinde  seçilmiş  alanda hemen farkına vardığımız, çimler üzerindeki bu patikanın yere 
+        dâhil  edilmesi  dıüşüncesiyle  oluşan bir geçiş mekânı olarak kuruldu. 
+    `
+    gsap.to(".goz-text-relative",{
+        duration:0.3,
+        opacity:0,
+        onComplete: showNewText,
+        onCompleteParams:[text]
+})};
+function workOnAddClass6 (){
+    let text = `
+        Hem yere, hem çevreye dair ölçekli bir mekân kurmayı umut eden, beton  ile  karşılaşma  anlarını  sıkıştırmayı  
+        düşünen bir kestirme. Diğer yanda aslında ahaliyi geçerken durmaya davet eden bir pasaj,  gözün  taradığı  
+        ardışık eşikleri bir kapanışlar ve açılışlar alanı olarak kuran bir kesişimler durağı, bir aralık olmasına 
+        çalıştık. Mekârısallaşan bir dizi eşik ve kenar üreterek öğrenci köyü girişinde farklı vistalar, kapanışlar ve 
+        perspektifler  kurarak  özellikle   gün   boyu   bostanda çalışanlar için bir dinlenme alanı tarif eden bir durak.
+    `
+    gsap.to(".goz-text-relative",{
+        duration:0.3,
+        opacity:0,
+        onComplete: showNewText,
+        onCompleteParams:[text]
+})};
+function workOnAddClass7 (){
+    let text = `
+        Gün içinde hareket eden gölgelerin tarif ettiği alanın zeminde  üretilen   yırtıkla buluştuğu çökertilmiş 
+        iç zeminde kısa bir an için bile olsa zaman duygusunu dönüştürmeyi deniyor GÖZ.
+    `
+    gsap.to(".goz-text-relative",{
+        duration:0.3,
+        opacity:0,
+        onComplete: showNewText,
+        onCompleteParams:[text]
+})};
+function workOnAddClass8 (){
+    let text = `
+        Sırtını beton duvarlara vererek oturan kişinin, betonun serinliğine, ışığın ısısına dokunduğu, gök ile 
+        yer arasında durmanın tüm duygusunun beton duvarlar arasına sıkıştırıldığı, ardışık bir iç/dış/ara kurmayı 
+        deniyor bir anlamda. 
+    `
+    gsap.to(".goz-text-relative",{
+        duration:0.3,
+        opacity:0,
+        onComplete: showNewText,
+        onCompleteParams:[text]
+})};

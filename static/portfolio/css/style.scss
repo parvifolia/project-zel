@@ -136,27 +136,30 @@ body:after{
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
-    .project-link {
-        height: $height;
-    }
-
     a{
+        text-align: center;
+        font-size: 1.5rem;;
+        width: 100%;
+        height: 100%;
         text-decoration: none;
         display: block;
         color: transparent;
         transition: color 1s;
-        &:hover {
-            color: darkgray;
+        .project-img{
+            background:white;
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+            transition: background 1s ease-in-out;
+            &:hover{
+                background: none;
+            }
+        }
+        &:hover{
+            color: $firstcolor;
         }
     }
-
-    .project-text {
-        position: relative;
-        bottom: -50vh;
-        letter-spacing: 2px;
-        font-size: 1.5rem;
-        text-align: center ;
-    }
+    
 }
 .projects-wrap-background {
     background: $background;
@@ -180,35 +183,19 @@ body:after{
 
         .project-wrap-1 {
             @include wrapdefault();
-            background-image:url(../img/home/402sketch.png);
-            transition: background-image 1.2s ease-in-out;
-            &:hover {
-                background-image: url(../img/home/402render.jpg);
-            }
+            background-image:url(../img/home/402render.jpg);
         }
         .project-wrap-2 {
             @include wrapdefault();
-            background-image:url(../img/home/401sketch.png);
-            transition: background-image 1.2s ease-in-out;
-            &:hover {
-                background-image: url(../img/home/401render.jpg)
-            }
+            background-image:url(../img/home/401render.jpg);
         }
         .project-wrap-3 {
             @include wrapdefault();
-            background-image:url(../img/home/302sketch.png);
-            transition: background-image 1.2s ease-in;
-            &:hover {
-                background-image:url(../img/home/302render.jpg);
-            }
+            background-image:url(../img/home/302render.jpg);
         }
         .project-wrap-4 {
             @include wrapdefault();
-            background-image:url(../img/home/301sketch.png);
-            transition: background-image 1.2s ease-in;
-            &:hover {
-                background-image:url(../img/home/301render.jpg);
-            }
+            background-image:url(../img/home/301render.jpg);
         }
 
     }
@@ -218,7 +205,7 @@ body:after{
         justify-content: center!important;
         .project-wrap-1,.project-wrap-2,.project-wrap-3,.project-wrap-4{
             width: 100%!important;
-            margin: 9.8vh 0!important;
+            margin: 17vh 0!important;
             height: 40vh!important;
             .project-text {
                 position: relative!important;
@@ -230,6 +217,9 @@ body:after{
         }
     }
 }
+
+
+
 
 
 
@@ -358,8 +348,15 @@ body:after{
     }
     .workshop-wrap-1,.workshop-wrap-2,.workshop-wrap-3{
         margin:0!important;
-        min-width: 400px!important;
+        min-width: 350px!important;
         height: 27vh!important;
+        a{
+            display: block;
+            height: 100%;
+            .project-link{
+                height: 100%!important;
+            }
+        }
         .project-text{
             display: none;
         }

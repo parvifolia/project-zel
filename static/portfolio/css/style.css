@@ -203,16 +203,14 @@ body:after {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../img/home/402sketch.png);
-  -webkit-transition: background-image 1.2s ease-in-out;
-  transition: background-image 1.2s ease-in-out;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-1 .project-link {
-  height: 49vh;
+  background-image: url(../img/home/402render.jpg);
 }
 
 .projects-wrap-background .projects-wrap .project-wrap-1 a {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   display: block;
   color: transparent;
@@ -220,20 +218,22 @@ body:after {
   transition: color 1s;
 }
 
+.projects-wrap-background .projects-wrap .project-wrap-1 a .project-img {
+  background: white;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.projects-wrap-background .projects-wrap .project-wrap-1 a .project-img:hover {
+  background: none;
+}
+
 .projects-wrap-background .projects-wrap .project-wrap-1 a:hover {
-  color: darkgray;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-1 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-1:hover {
-  background-image: url(../img/home/402render.jpg);
+  color: lightgray;
 }
 
 .projects-wrap-background .projects-wrap .project-wrap-2 {
@@ -244,16 +244,14 @@ body:after {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../img/home/401sketch.png);
-  -webkit-transition: background-image 1.2s ease-in-out;
-  transition: background-image 1.2s ease-in-out;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-2 .project-link {
-  height: 49vh;
+  background-image: url(../img/home/401render.jpg);
 }
 
 .projects-wrap-background .projects-wrap .project-wrap-2 a {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   display: block;
   color: transparent;
@@ -261,20 +259,22 @@ body:after {
   transition: color 1s;
 }
 
+.projects-wrap-background .projects-wrap .project-wrap-2 a .project-img {
+  background: white;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.projects-wrap-background .projects-wrap .project-wrap-2 a .project-img:hover {
+  background: none;
+}
+
 .projects-wrap-background .projects-wrap .project-wrap-2 a:hover {
-  color: darkgray;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-2 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-2:hover {
-  background-image: url(../img/home/401render.jpg);
+  color: lightgray;
 }
 
 .projects-wrap-background .projects-wrap .project-wrap-3 {
@@ -285,16 +285,14 @@ body:after {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../img/home/302sketch.png);
-  -webkit-transition: background-image 1.2s ease-in;
-  transition: background-image 1.2s ease-in;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-3 .project-link {
-  height: 49vh;
+  background-image: url(../img/home/302render.jpg);
 }
 
 .projects-wrap-background .projects-wrap .project-wrap-3 a {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   display: block;
   color: transparent;
@@ -302,20 +300,22 @@ body:after {
   transition: color 1s;
 }
 
+.projects-wrap-background .projects-wrap .project-wrap-3 a .project-img {
+  background: white;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.projects-wrap-background .projects-wrap .project-wrap-3 a .project-img:hover {
+  background: none;
+}
+
 .projects-wrap-background .projects-wrap .project-wrap-3 a:hover {
-  color: darkgray;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-3 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-3:hover {
-  background-image: url(../img/home/302render.jpg);
+  color: lightgray;
 }
 
 .projects-wrap-background .projects-wrap .project-wrap-4 {
@@ -326,16 +326,14 @@ body:after {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-image: url(../img/home/301sketch.png);
-  -webkit-transition: background-image 1.2s ease-in;
-  transition: background-image 1.2s ease-in;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-4 .project-link {
-  height: 49vh;
+  background-image: url(../img/home/301render.jpg);
 }
 
 .projects-wrap-background .projects-wrap .project-wrap-4 a {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   display: block;
   color: transparent;
@@ -343,20 +341,22 @@ body:after {
   transition: color 1s;
 }
 
+.projects-wrap-background .projects-wrap .project-wrap-4 a .project-img {
+  background: white;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.projects-wrap-background .projects-wrap .project-wrap-4 a .project-img:hover {
+  background: none;
+}
+
 .projects-wrap-background .projects-wrap .project-wrap-4 a:hover {
-  color: darkgray;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-4 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.projects-wrap-background .projects-wrap .project-wrap-4:hover {
-  background-image: url(../img/home/301render.jpg);
+  color: lightgray;
 }
 
 @media screen and (max-width: 768px) {
@@ -367,7 +367,7 @@ body:after {
   }
   .projects-wrap .project-wrap-1, .projects-wrap .project-wrap-2, .projects-wrap .project-wrap-3, .projects-wrap .project-wrap-4 {
     width: 100% !important;
-    margin: 9.8vh 0 !important;
+    margin: 17vh 0 !important;
     height: 40vh !important;
   }
   .projects-wrap .project-wrap-1 .project-text, .projects-wrap .project-wrap-2 .project-text, .projects-wrap .project-wrap-3 .project-text, .projects-wrap .project-wrap-4 .project-text {
@@ -509,11 +509,11 @@ body:after {
   transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-1 .project-link {
-  height: 49vh;
-}
-
 .workshop-wrap-background .workshop-wrap .workshop-wrap-1 a {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   display: block;
   color: transparent;
@@ -521,16 +521,22 @@ body:after {
   transition: color 1s;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-1 a:hover {
-  color: darkgray;
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 a .project-img {
+  background: white;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-1 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 a .project-img:hover {
+  background: none;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 a:hover {
+  color: lightgray;
 }
 
 .workshop-wrap-background .workshop-wrap .workshop-wrap-1:hover {
@@ -560,11 +566,11 @@ body:after {
   transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-2 .project-link {
-  height: 49vh;
-}
-
 .workshop-wrap-background .workshop-wrap .workshop-wrap-2 a {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   display: block;
   color: transparent;
@@ -572,16 +578,22 @@ body:after {
   transition: color 1s;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-2 a:hover {
-  color: darkgray;
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 a .project-img {
+  background: white;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-2 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 a .project-img:hover {
+  background: none;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 a:hover {
+  color: lightgray;
 }
 
 .workshop-wrap-background .workshop-wrap .workshop-wrap-2:hover {
@@ -611,11 +623,11 @@ body:after {
   transition: filter 1s ease-in-out, -webkit-filter 1s ease-in-out;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-3 .project-link {
-  height: 49vh;
-}
-
 .workshop-wrap-background .workshop-wrap .workshop-wrap-3 a {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   display: block;
   color: transparent;
@@ -623,16 +635,22 @@ body:after {
   transition: color 1s;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-3 a:hover {
-  color: darkgray;
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 a .project-img {
+  background: white;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
 }
 
-.workshop-wrap-background .workshop-wrap .workshop-wrap-3 .project-text {
-  position: relative;
-  bottom: -50vh;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 a .project-img:hover {
+  background: none;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 a:hover {
+  color: lightgray;
 }
 
 .workshop-wrap-background .workshop-wrap .workshop-wrap-3:hover {
@@ -646,8 +664,15 @@ body:after {
   }
   .workshop-wrap-1, .workshop-wrap-2, .workshop-wrap-3 {
     margin: 0 !important;
-    min-width: 400px !important;
+    min-width: 350px !important;
     height: 27vh !important;
+  }
+  .workshop-wrap-1 a, .workshop-wrap-2 a, .workshop-wrap-3 a {
+    display: block;
+    height: 100%;
+  }
+  .workshop-wrap-1 a .project-link, .workshop-wrap-2 a .project-link, .workshop-wrap-3 a .project-link {
+    height: 100% !important;
   }
   .workshop-wrap-1 .project-text, .workshop-wrap-2 .project-text, .workshop-wrap-3 .project-text {
     display: none;
