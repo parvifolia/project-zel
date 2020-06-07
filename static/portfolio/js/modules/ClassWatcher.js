@@ -1,4 +1,3 @@
-// mutationObserver
 class ClassWatcher {
     constructor(targetNode, classToWatch, classAddedCallback, classRemovedCallback) {
         this.targetNode = targetNode
