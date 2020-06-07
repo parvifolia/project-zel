@@ -539,6 +539,18 @@ body:after {
   color: lightgray;
 }
 
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 a {
+  position: relative;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-1 a .workshop-title {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+}
+
 .workshop-wrap-background .workshop-wrap .workshop-wrap-1:hover {
   -webkit-filter: none;
           filter: none;
@@ -594,6 +606,18 @@ body:after {
 
 .workshop-wrap-background .workshop-wrap .workshop-wrap-2 a:hover {
   color: lightgray;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 a {
+  position: relative;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-2 a .workshop-title {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 100%;
 }
 
 .workshop-wrap-background .workshop-wrap .workshop-wrap-2:hover {
@@ -653,6 +677,18 @@ body:after {
   color: lightgray;
 }
 
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 a {
+  position: relative;
+}
+
+.workshop-wrap-background .workshop-wrap .workshop-wrap-3 a .workshop-title {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  text-align: center;
+  top: 100%;
+}
+
 .workshop-wrap-background .workshop-wrap .workshop-wrap-3:hover {
   -webkit-filter: none;
           filter: none;
@@ -674,7 +710,7 @@ body:after {
   .workshop-wrap-1 a .project-link, .workshop-wrap-2 a .project-link, .workshop-wrap-3 a .project-link {
     height: 100% !important;
   }
-  .workshop-wrap-1 .project-text, .workshop-wrap-2 .project-text, .workshop-wrap-3 .project-text {
+  .workshop-wrap-1 .workshop-title, .workshop-wrap-2 .workshop-title, .workshop-wrap-3 .workshop-title {
     display: none;
   }
 }

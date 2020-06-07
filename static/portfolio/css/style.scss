@@ -312,6 +312,16 @@ body:after{
             background-size: cover;
             filter: grayscale(100%);
             transition: filter 1s ease-in-out;
+            a{
+                position: relative;
+                .workshop-title{
+                    width: 100%;
+                    margin: auto;
+                    position: absolute;
+                    text-align: center;
+                    top:100%;
+                }
+            }
             &:hover {
                 filter: none;
             }
@@ -324,6 +334,16 @@ body:after{
             background-size: cover;
             filter: grayscale(100%);
             transition: filter 1s ease-in-out;
+            a{
+                position: relative;
+                .workshop-title{
+                    width: 100%;
+                    margin: auto;
+                    position: absolute;
+                    text-align: center;
+                    top:100%;
+                }
+            }
             &:hover {
                 filter: none;
             }
@@ -334,6 +354,16 @@ body:after{
             flex: 1;
             background-size: cover;
             background-image:url(../img/workshop/meydan.jpg);
+            a{
+                position: relative;
+                .workshop-title{
+                    width: 100%;
+                    margin: auto;
+                    position: absolute;
+                    text-align: center;
+                    top:100%;
+                }
+            }
             filter: grayscale(100%);
             transition: filter 1s ease-in-out;
             &:hover {
@@ -357,7 +387,7 @@ body:after{
                 height: 100%!important;
             }
         }
-        .project-text{
+        .workshop-title{
             display: none;
         }
     }
