@@ -50,7 +50,7 @@ class ClassWatcher {
 
 const firstText = document.querySelector(".flaneur-text-relative");
 const carousel = document.querySelectorAll(".carousel-item");
-$('.carousel').carousel('pause'); // watch class changes with mutation observer
+$('.carousel').carousel('pause'); // watch class changes with mutation observer 
 
 function showNewText(text) {
   firstText.innerHTML = `${text}`;
@@ -64,7 +64,7 @@ function workOnClassRemoved() {}
 
 ;
 carousel.forEach((e, i) => {
-  if (i < 4) {
+  if (i < 12) {
     let list = [workOnAddClass1, workOnAddClass2, workOnAddClass3, workOnAddClass4, workOnAddClass5, workOnAddClass6, workOnAddClass7, workOnAddClass8, workOnAddClass9, workOnAddClass10, workOnAddClass11, workOnAddClass12];
     new ClassWatcher(e, 'active', list[i], workOnClassRemoved);
   }
@@ -175,10 +175,10 @@ function workOnAddClass6() {
 
 function workOnAddClass7() {
   let text = `
-        Sonuç itibariyle kenti tekrar ev yapmaya çalışacaktır. Atölye, kentin gündelik kullanımlarını sorgulamak, 
-        konfor araçlarının üretimlerini gerçekleştirmek ve kenti ev gibi kullanmanın mümkünlüğünü tartışmaktadır.<br><br>
-
-        Kurgu kenti anlamaya çalışıp, ona üretmek üzerine kuruludur.
+    Kent, aslında tamamı bilmeceden oluşan kompleks bir olgudur; tamamen kavranılamaz ve kavranılan duygular da 
+    son derece subjektiftir. Bununla birlikte bir Flaneur kentin kendisini ev gibi kullanıyorsa, yabancı olduğu bu 
+    habitat karşısında ne tepki vereceği önemlidir; çünkü flaneur konforunu tekrar elde etmeye çalışacak, bir noktada 
+    gezginlik ile üretim dengesini kurması gerecektir.
     `;
   gsap.to(".flaneur-text-relative", {
     duration: 0.3,
@@ -224,10 +224,8 @@ function workOnAddClass9() {
 
 function workOnAddClass10() {
   let text = `
-        Sonuç itibariyle kenti tekrar ev yapmaya çalışacaktır. Atölye, kentin gündelik kullanımlarını sorgulamak, 
-        konfor araçlarının üretimlerini gerçekleştirmek ve kenti ev gibi kullanmanın mümkünlüğünü tartışmaktadır.<br><br>
-
-        Kurgu kenti anlamaya çalışıp, ona üretmek üzerine kuruludur. 
+    Döşemenin taşınabilirliği için yaklaşık 35cm aralıklarla 5x10 kirişler çakılmış, döşeme olarak kullanılan 
+    osb nin mukavemetini arttırmak içinde 2 adet üst üste konulmuştur.
     `;
   gsap.to(".flaneur-text-relative", {
     duration: 0.3,

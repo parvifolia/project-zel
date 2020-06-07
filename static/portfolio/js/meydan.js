@@ -18,7 +18,7 @@ function showNewText(text){
 function workOnClassRemoved(){};
 
 carousel.forEach((e, i) => {
-    if (i<4){
+    if (i<6){
     let list = [ workOnAddClass1,workOnAddClass2,workOnAddClass3,workOnAddClass4,
                 workOnAddClass5,workOnAddClass6]
     new ClassWatcher(e, 'active', list[i],workOnClassRemoved)

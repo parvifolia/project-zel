@@ -48,7 +48,6 @@ class ClassWatcher {
 
 }
 
-;
 const firstText = document.querySelector(".m402-text-relative");
 const carousel = document.querySelectorAll(".carousel-item");
 $('.carousel').carousel('pause'); // watch class changes with mutation observer
@@ -65,7 +64,7 @@ function workOnClassRemoved() {}
 
 ;
 carousel.forEach((e, i) => {
-  if (i < 4) {
+  if (i < 3) {
     let list = [workOnAddClass1, workOnAddClass2, workOnAddClass3];
     new ClassWatcher(e, 'active', list[i], workOnClassRemoved);
   }
