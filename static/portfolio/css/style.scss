@@ -204,6 +204,7 @@ body:after{
     .projects-wrap {
         justify-content: center!important;
         .project-wrap-1,.project-wrap-2,.project-wrap-3,.project-wrap-4{
+            background-size: contain!important;
             width: 100%!important;
             margin: 17vh 0!important;
             height: 40vh!important;

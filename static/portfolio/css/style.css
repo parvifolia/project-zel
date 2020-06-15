@@ -366,6 +366,7 @@ body:after {
             justify-content: center !important;
   }
   .projects-wrap .project-wrap-1, .projects-wrap .project-wrap-2, .projects-wrap .project-wrap-3, .projects-wrap .project-wrap-4 {
+    background-size: contain !important;
     width: 100% !important;
     margin: 17vh 0 !important;
     height: 40vh !important;
@@ -1492,4 +1493,3 @@ body:after {
           justify-content: center;
   margin: 5vh auto;
 }
-/*# sourceMappingURL=style.css.map */
