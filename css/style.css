@@ -110,7 +110,6 @@ body:after {
   font-size: 0.8rem;
   text-align: center;
   width: auto;
-  border-bottom: 1px solid transparent;
   -webkit-transition: border-bottom 1s;
   transition: border-bottom 1s;
 }
@@ -1398,10 +1397,6 @@ body:after {
   color: lightgray;
 }
 
-.footer .footer-wrap .footer-icon-wrap .footer-icons .footer-mail {
-  display: none;
-}
-
 .footer .footer-wrap .footer-icon-wrap .footer-icons .footer-icon img {
   width: 2rem;
   -webkit-transition: -webkit-box-shadow 0.5s;
@@ -1458,11 +1453,6 @@ body:after {
   .footer .footer-icons {
     width: 205px !important;
     margin: auto !important;
-  }
-  .footer .footer-mail {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
   }
   .footer .footer-mail-text {
     display: none !important;
